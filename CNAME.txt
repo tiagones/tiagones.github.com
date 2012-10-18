@@ -1,1 +1,1 @@
-tiagones.com.br.             3259    IN      A       204.232.175.78
+tiagones.com.br
