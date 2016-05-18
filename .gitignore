@@ -1,7 +1,6 @@
 # Numerous always-ignore extensions
 *.diff
 *.err
-*.bat
 *.orig
 *.log
 *.rej

@@ -1,0 +1,1 @@
+RENAME "C:\wamp\www\tiagones.github.com\assets\_src\bower_components\normalize-css\normalize.css" "normalize.scss"
