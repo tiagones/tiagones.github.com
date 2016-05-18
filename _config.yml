@@ -1,0 +1,15 @@
+name: Tiagones
+baseurl: /
+markdown: redcarpet
+highlighter: rouge # or rouge or null
+exclude: [
+  "assets/_src/",
+  "node_modules",
+  "*.bat",
+  "*.sublime-project",
+  "*.sublime-workspace",
+  "bower.json",
+  "gulpfile.js",
+  "package.json",
+  "README.md"
+]

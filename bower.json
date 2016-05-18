@@ -1,0 +1,22 @@
+{
+  "name": "tiagones.com.br",
+  "version": "0.0.0",
+  "description": "Experiências e site pessoal",
+  "homepage": "https://tiagones.com.br",
+  "main": "index.html",
+  "authors": [
+    "Tiago Pereira Dantas"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "normalize-css": "normalize.css#^4.1.1"
+  }
+}

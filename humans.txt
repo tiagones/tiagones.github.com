@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Tiago Pereira Dantas -- Designer
+
+# THANKS
+
+  Travis Neilson - http://travisneilson.com/
+  Shane Osbourne - https://github.com/shakyShane
+
+# TECHNOLOGY COLOPHON
+
+  CSS3, HTML5
+  JADE, SASS
+  Jekyll, GulpJS, BrowserSync
+  jQuery, Normalize.css

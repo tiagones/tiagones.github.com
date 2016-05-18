@@ -1,0 +1,6 @@
+{
+    "directory": "assets/_src/bower_components/",
+    "scripts": {
+        "postinstall": "./bower-postinstall.bat"
+    }
+}
