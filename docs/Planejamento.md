@@ -49,6 +49,7 @@
   - Comentários no Disqus
 - Contato
   - Formulário de contato
+- Busca? (Blogs, Trabalhos)
 - Sobre o site*
   - Validação
   - Tecnologias utilizadas na contrução
