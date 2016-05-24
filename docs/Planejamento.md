@@ -20,7 +20,7 @@
   4. Entrar em contato comigo.
   5. Me encontrar nas redes sociais.
   
-## Funcionalidades (Páginas)
+## Funcionalidades
 - Sobre mim
   - O que eu faço (Serviços)
     - Idêntidade Visual
@@ -53,3 +53,19 @@
   - Validação
   - Tecnologias utilizadas na contrução
   - Agradecimento a quem me ajudou a construir (humans.txt)
+
+## Páginas
+- Sobre mim
+  - O que eu faço (Serviços)
+  - Curriculo PDF/Impressão (De onde eu sou, O que eu faço, Anos de experiência, Skills)
+  - Progressão do emagrecimento/cirurgia
+- Portfólio
+  - Trabalhos
+  - Trabalho
+- Blog
+  - Posts
+  - Post
+- Contato
+  - Formulário de contato
+  - Página de resultado do formulário
+- Sobre o site*
