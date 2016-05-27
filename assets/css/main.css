@@ -3,7 +3,8 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Nunito:700,300);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -374,9 +375,10 @@ body {
 
 body {
   background: #fff;
-  font-family: 'Roboto';
-  font-size: 14px;
-  line-height: 1.6;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.05em;
+  font-weight: 300;
+  line-height: 1.4em;
   color: #111;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -410,11 +412,15 @@ body {
   -webkit-tap-highlight-color: #ffdc00; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-family: "Varela Round", sans-serif; }
+
+p span {
+  font-size: 0.8em;
+  text-transform: uppercase; }
 
 strong,
 b {
-  font-weight: 400; }
+  font-weight: 700; }
 
 .button,
 button,
