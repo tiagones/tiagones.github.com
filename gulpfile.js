@@ -86,7 +86,7 @@ gulp.task('jade', function () {
  */
 gulp.task('uglify', function() {
     return gulp.src([
-        'assets/_src/bower_components/jquery/dist/jquery.js',
+        //'assets/_src/bower_components/jquery/dist/jquery.js',
         'assets/_src/js/plugins.js',
         'assets/_src/js/functions.js'
     ])
