@@ -402,16 +402,10 @@ a {
 ::selection {
   background: #ffdc00; }
 
-::-moz-selection {
-  background: #ffdc00; }
-
 img::-moz-selection {
   background: transparent; }
 
 img::selection {
-  background: transparent; }
-
-img::-moz-selection {
   background: transparent; }
 
 body {
