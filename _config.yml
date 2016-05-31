@@ -3,12 +3,13 @@ baseurl: /
 markdown: redcarpet
 highlighter: rouge # or rouge or null
 exclude: [
-  "assets/_src/",
+  "docs",
   "node_modules",
   "*.bat",
   "*.sublime-project",
   "*.sublime-workspace",
   "bower.json",
+  "CNAME",
   "gulpfile.js",
   "package.json",
   "README.md"
