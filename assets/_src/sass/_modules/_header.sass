@@ -1,0 +1,113 @@
+.site-header
+  margin-bottom: 3.6em
+  
+  nav
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    .logo
+      order: 2
+      align-self: baseline
+      width: 175px
+      height: 175px
+      margin: auto 30px
+      border: 7px solid $black
+      border-radius: 50%
+      display: flex
+      align-items: center
+      &:hover
+        background-color: $black
+      &:hover > svg > g > path
+        fill: $white
+      svg
+        margin: 0 auto;
+        max-width: 90%
+        padding-left: 6px
+        path
+          fill: $black
+
+    .nav-link
+      background-color: transparent
+      padding: 5em 3em 3em 3em;
+      color: $black
+      width: 20%
+      font:
+        family: "Varela Round", sans-serif
+      &:hover
+        color: $white
+        background-color: $black
+      &:before
+        content: ' {'
+        float: right
+      &:after
+        content: '}'
+      &.active
+        background-color: $black
+        color: $white
+        &:hover
+          background-color: $silver
+          color: $black
+
+      .description
+        display: block
+        position: relative
+        font:
+          family: "Nunito", sans-serif
+          size: 0.65em
+        line-height: 1.2em
+        margin-left: 1.2em
+
+        &:before
+          position: absolute
+          top: -50px
+          left: -1.2em
+          font:
+            size: 1.1em
+
+        &:after
+          content: ';'
+
+    .nav-about
+      order: 0
+      .description
+        &:before
+          content: '01.'
+
+    .nav-portfolio
+      order: 1
+      .description
+        &:before
+          content: '02.'
+
+    .nav-blog
+      order: 3
+      .description
+        &:before
+          content: '03.'
+
+    .nav-contact
+      order: 4
+      .description
+        &:before
+          content: '04.'
+
+// Make the Header White when needed
+.white-header
+  .site-header
+    .logo
+      border-color: rgba(255, 255 ,255 , 0.7)
+      &:hover
+        background-color: transparent
+      &:hover > svg > g > path
+        fill: $white
+      svg
+        path
+          //fill: $white
+          fill: rgba(255, 255 ,255 , 0.7)
+
+    .nav-link
+      color: $white
+      &:hover
+        color: $black
+        background-color: rgba(255, 255 ,255 , 0.6)

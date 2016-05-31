@@ -1,0 +1,64 @@
+.site-footer
+  margin-top: 3.6em
+
+  .footer-wrap
+    border-top: 2px solid $black
+    display: flex
+    max-width: 100%
+
+    p
+      font-size: 0.8em
+      margin: 0
+      align-self: center
+
+    .social
+      margin-left: auto
+      margin-bottom: 0
+      display: flex
+
+      .social-link
+        display: flex
+        justify-content: center
+        height: 3em
+        width: 3em
+        color: $black
+        overflow: hidden
+        span
+          align-self: center
+          font-size: 0.66em
+
+      .linkedin
+        &:hover
+          color: $white
+          background-color: $linkedin
+
+      .codepen
+        &:hover
+          color: $white
+          background-color: $codepen
+
+      .github
+        &:hover
+          color: $white
+          background-color: $github
+
+      .dribbble
+        &:hover
+          color: $white
+          background-color: $dribbble
+
+      .behance
+        &:hover
+          color: $white
+          background-color: $behance
+
+// Make the Footer White when needed
+.white-footer
+  .site-footer
+    color: $white
+    .footer-wrap
+      border-color: rgba(255, 255 ,255 , 0.7)
+
+      .social
+        .social-link
+          color: $white

@@ -1,0 +1,14 @@
+//- Header do site
+header.site-header
+  .container
+    nav
+      a(href="{{site.baseurl}}").logo
+        include ./logo.html
+      a(href="{{site.baseurl}}sobre-mim/").nav-link.nav-about.
+        Sobre mim #[span.description Saiba um pouco mais sobre quem sou eu]
+      a(href="#0").nav-link.nav-portfolio.
+        Portfólio #[span.description Projetos que trabalhei com meus clientes]
+      a(href="#0").nav-link.nav-blog.
+        Blog #[span.description Um pouco sobre minha vida e como faço as coisas]
+      a(href="#0").nav-link.nav-contact.
+        Contato #[span.description Caso queira me contratar ou apenas dizer oi]
