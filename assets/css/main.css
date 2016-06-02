@@ -370,8 +370,17 @@ textarea {
  * Colors for the site
  */
 /**
+ * Transparency colors
+ */
+/**
  * Colors for the companies
  */
+/**
+ * Font-size
+ */
+:root {
+  font-size: 15px; }
+
 * {
   box-sizing: border-box; }
 
@@ -382,9 +391,9 @@ body {
 body {
   background: #fff;
   font-family: "Nunito", sans-serif;
-  font-size: 1.05em;
+  font-size: 1.07rem;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 1.15;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -415,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Varela Round", sans-serif; }
 
 p span {
-  font-size: 0.8em;
+  font-size: 0.85rem;
   text-transform: uppercase; }
 
 strong,
@@ -448,7 +457,7 @@ b {
     margin: 0 auto; } }
 
 .site-header {
-  margin-bottom: 3.6em; }
+  margin-bottom: 4rem; }
   .site-header #menu-toggle {
     display: none; }
     .site-header #menu-toggle:checked + nav > .nav-link {
@@ -527,7 +536,8 @@ b {
         background-color: rgba(51, 51, 51, 0.8);
         border-top: 2px solid #000;
         color: #fff;
-        padding: 15px 0 13px 0;
+        font-size: 1.3rem;
+        padding: 1rem 0;
         z-index: 2;
         -webkit-transform: translate(-100%, 0);
                 transform: translate(-100%, 0);
@@ -539,12 +549,12 @@ b {
         .site-header nav .nav-link.active {
           background-color: rgba(255, 255, 255, 0.7);
           color: #333; }
+        .site-header nav .nav-link:last-of-type {
+          border-bottom: 2px solid #000; }
         .site-header nav .nav-link .description {
           display: none; }
       .site-header nav .nav-about {
-        border-top: none; }
-      .site-header nav .nav-contact {
-        border-bottom: 2px solid #000; } }
+        border-top: none; } }
   @media (min-width: 768px) {
     .site-header nav {
       display: -ms-flexbox;
@@ -581,9 +591,10 @@ b {
             fill: #333; }
       .site-header nav .nav-link {
         background-color: transparent;
-        padding: 5em 3em 3em 3em;
+        padding: 6rem 3rem 5rem 3rem;
         color: #333;
-        width: 20%; }
+        width: 20%;
+        font-size: 1.2rem; }
         .site-header nav .nav-link:hover {
           color: #fff;
           background-color: #333; }
@@ -602,14 +613,13 @@ b {
           display: block;
           position: relative;
           font-family: "Nunito", sans-serif;
-          font-size: 0.65em;
-          line-height: 1.2em;
-          margin-left: 1.2em; }
+          font-size: 0.8rem;
+          margin: 0.3rem 0 0.3rem 1rem; }
           .site-header nav .nav-link .description:before {
             position: absolute;
             top: -50px;
-            left: -1.2em;
-            font-size: 1.1em; }
+            left: -1.2rem;
+            font-size: 0.8rem; }
           .site-header nav .nav-link .description:after {
             content: ';'; }
       .site-header nav .nav-about {
@@ -654,19 +664,19 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #333;
-  font-size: 11px;
-  line-height: 38px;
-  letter-spacing: .1rem;
+  height: 2rem;
+  padding: 0 2rem;
+  font-size: 1rem;
+  line-height: 1.85rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 19px;
-  border: 2px solid #333;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1rem;
   cursor: pointer; }
   .btn:hover, .btn:active, .btn:focus,
   button:hover,
@@ -681,24 +691,45 @@ input[type="button"] {
   input[type="button"]:hover,
   input[type="button"]:active,
   input[type="button"]:focus {
-    color: #aaa;
-    border-color: #aaa;
     outline: 0; }
 
+/**
+ * Size
+ */
+.btn-cta {
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border-radius: 1.75rem;
+  line-height: 3.35rem; }
+
+/**
+ * Colors
+ */
+.btn-black {
+  color: #333;
+  border-color: #333; }
+  .btn-black:hover, .btn-black:active, .btn-black:focus {
+    color: rgba(51, 51, 51, 0.8);
+    border-color: rgba(51, 51, 51, 0.8); }
+
+.btn-white {
+  color: #fff;
+  border-color: #fff; }
+  .btn-white:hover, .btn-white:active, .btn-white:focus {
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.7); }
+
 .site-footer {
-  margin-top: 3.6em; }
+  margin-top: 4rem; }
   .site-footer .footer-wrap {
-    border-top: 2px solid #333;
     display: -ms-flexbox;
-    display: flex;
-    max-width: 100%; }
+    display: flex; }
     .site-footer .footer-wrap p {
       font-size: 0.8em;
       margin: 0;
       -ms-flex-item-align: center;
           align-self: center; }
     .site-footer .footer-wrap .social {
-      margin-left: auto;
       margin-bottom: 0;
       display: -ms-flexbox;
       display: flex; }
@@ -707,8 +738,8 @@ input[type="button"] {
         display: flex;
         -ms-flex-pack: center;
             justify-content: center;
-        height: 3em;
-        width: 3em;
+        height: 3.33rem;
+        width: 3.33rem;
         color: #333;
         overflow: hidden; }
         .site-footer .footer-wrap .social .social-link span {
@@ -730,13 +761,37 @@ input[type="button"] {
       .site-footer .footer-wrap .social .behance:hover {
         color: #fff;
         background-color: #1769FF; }
+  @media (max-width: 767px) {
+    .site-footer .footer-wrap {
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .site-footer .footer-wrap .social {
+        border-top: 2px solid #333;
+        margin-top: 1rem;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        .site-footer .footer-wrap .social .social-link {
+          -ms-flex-positive: 1;
+              flex-grow: 1; } }
+  @media (min-width: 768px) {
+    .site-footer .footer-wrap {
+      border-top: 2px solid #333;
+      max-width: 100%; }
+      .site-footer .footer-wrap .social {
+        margin-left: auto; } }
 
 .white-footer .site-footer {
   color: #fff; }
-  .white-footer .site-footer .footer-wrap {
-    border-color: rgba(255, 255, 255, 0.7); }
-    .white-footer .site-footer .footer-wrap .social .social-link {
-      color: #fff; }
+  .white-footer .site-footer .social .social-link {
+    color: #fff; }
+
+@media (max-width: 767px) {
+  .white-footer .footer-wrap .social {
+    border-top: 2px solid #fff; } }
+
+@media (min-width: 768px) {
+  .white-footer .footer-wrap {
+    border-color: rgba(255, 255, 255, 0.7); } }
 
 #landpage {
   color: #fff;
