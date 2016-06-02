@@ -572,7 +572,7 @@ b {
             align-self: baseline;
         width: 175px;
         height: 175px;
-        margin: auto 30px;
+        margin: auto 2rem;
         border: 7px solid #333;
         border-radius: 50%;
         display: -ms-flexbox;
@@ -642,6 +642,15 @@ b {
             order: 4; }
         .site-header nav .nav-contact .description:before {
           content: '04:'; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .site-header nav .logo {
+      width: 120px;
+      height: 120px;
+      border-width: 5px;
+      margin: auto 1rem; }
+    .site-header nav .nav-link {
+      padding: 3.5rem 1.5rem 2rem 1.5rem;
+      font-size: 1.1rem; } }
 
 .white-header .site-header .logo {
   border-color: rgba(255, 255, 255, 0.7); }
