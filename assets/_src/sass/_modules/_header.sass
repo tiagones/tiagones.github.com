@@ -80,7 +80,8 @@
         background-color: $black-transparent
         border-top: 2px solid #000
         color: $white
-        padding: 15px 0 13px 0
+        font-size: 1.3rem
+        padding: 1rem 0
         z-index: 2
         transform: translate(-100%, 0)
         transition: transform 0.1s ease-in-out
@@ -90,19 +91,14 @@
         &.active
           background-color: $white-transparent
           color: $black
+        &:last-of-type
+          border-bottom: 2px solid #000
 
         .description
           display: none
 
       .nav-about
         border-top: none
-
-      .nav-portfolio
-
-      .nav-blog
-
-      .nav-contact
-        border-bottom: 2px solid #000
 
 
   // Menu for Medium Devices
@@ -138,9 +134,11 @@
 
       .nav-link
         background-color: transparent
-        padding: 5em 3em 3em 3em;
+        padding: 6rem 3rem 5rem 3rem;
         color: $black
         width: 20%
+        font:
+          size: 1.2rem
         &:hover
           color: $white
           background-color: $black
@@ -161,16 +159,15 @@
           position: relative
           font:
             family: "Nunito", sans-serif
-            size: 0.65em
-          line-height: 1.2em
-          margin-left: 1.2em
+            size: 0.8rem
+          margin: 0.3rem 0 0.3rem 1rem
 
           &:before
             position: absolute
             top: -50px
-            left: -1.2em
+            left: -1.2rem
             font:
-              size: 1.1em
+              size: 0.8rem
 
           &:after
             content: ';'
