@@ -431,10 +431,14 @@ strong,
 b {
   font-weight: 700; }
 
+.container {
+  padding-left: 1.334rem;
+  padding-right: 1.334rem; }
+
 @media (max-width: 543px) {
   .container {
     max-width: 543px;
-    margin: 0 20px; } }
+    margin: 0 auto; } }
 
 @media (min-width: 544px) {
   .container {
@@ -805,7 +809,6 @@ input[type="button"] {
 #landpage {
   color: #fff;
   background-color: #999;
-  background-image: url("https://assets-cdn.github.com/images/modules/site/home-hero.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
