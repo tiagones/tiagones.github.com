@@ -4,12 +4,11 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"]
   display: inline-block
-  height: 38px
-  padding: 0 30px
-  color: $black
-  font-size: 11px
-  line-height: 38px
-  letter-spacing: .1rem
+  height: 2rem
+  padding: 0 2rem
+  font-size: 1rem
+  line-height: 1.85rem
+  letter-spacing: 0.1rem
   text:
     transform: uppercase
     decoration: none
@@ -17,13 +16,42 @@ input[type="button"]
   white-space: nowrap
   background:
     color: transparent
-  border-radius: 19px
-  border: 2px solid $black
+  border:
+    style: solid
+    width: 2px
+    radius: 1rem
   cursor: pointer
-
   &:hover,
   &:active,
   &:focus
-    color: $gray
-    border-color: $gray
     outline: 0
+
+/**
+ * Size
+ */
+.btn-cta
+  height: 3.5rem
+  font-size: 1.5rem
+  border-radius: 1.75rem
+  line-height: 3.35rem
+
+/**
+ * Colors
+ */
+.btn-black
+  color: $black
+  border-color: $black
+  &:hover,
+  &:active,
+  &:focus
+    color: $black-transparent
+    border-color: $black-transparent
+
+.btn-white
+  color: $white
+  border-color: $white
+  &:hover,
+  &:active,
+  &:focus
+    color: $white-transparent
+    border-color: $white-transparent
