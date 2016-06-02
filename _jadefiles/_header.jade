@@ -3,13 +3,13 @@ header.site-header
   input(type="checkbox" id="menu-toggle")
   nav
     label(for="menu-toggle" class="menu-toggle")
-    {% if page.layout == "landpage" %}
-    .logo
+    {% if page.layout == 'landpage' %}
+    div.logo
       include ./logo.html
-    {% elsif %}
+    {% else %}
     a(href="{{site.baseurl}}").logo
       include ./logo.html
-    {% endif %}
+    {% endif  %}
     a(href="{{site.baseurl}}sobre-mim/").nav-link.nav-about.
       Sobre mim #[span.description Saiba um pouco mais sobre quem sou eu]
     a(href="#0").nav-link.nav-portfolio.
