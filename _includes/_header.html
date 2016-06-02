@@ -1,4 +1,4 @@
-<header class="site-header"><input type="checkbox" id="menu-toggle"/><nav><label for="menu-toggle" class="menu-toggle"></label><a href="{{site.baseurl}}" class="logo"><?xml version="1.0" encoding="utf-8"?>
+<header class="site-header"><input type="checkbox" id="menu-toggle"/><nav><label for="menu-toggle" class="menu-toggle"></label>{% if page.layout == "landpage" %}<div class="logo"><?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="193.772px" height="120.809px" viewBox="0.115 4.596 193.772 120.809" enable-background="new 0.115 4.596 193.772 120.809"
@@ -16,4 +16,22 @@
   <path id="boca" d="M127.258,125.404c-19.518-7.229-46.085-11.87-66.406-5.1c-47.378,0,23.414-7.594,33.902-9.22
     C111.68,108.465,168.982,118.421,127.258,125.404z"/>
 </g>
-</svg></a><a href="{{site.baseurl}}sobre-mim/" class="nav-link nav-about">Sobre mim <span class="description">Saiba um pouco mais sobre quem sou eu</span></a><a href="#0" class="nav-link nav-portfolio">Portfólio <span class="description">Projetos que trabalhei com meus clientes</span></a><a href="#0" class="nav-link nav-blog">Blog <span class="description">Um pouco sobre minha vida e como faço as coisas</span></a><a href="#0" class="nav-link nav-contact">Contato <span class="description">Caso queira me contratar ou apenas dizer oi</span></a></nav></header>
+</svg></div>{% elsif %}<a href="{{site.baseurl}}" class="logo"><?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="193.772px" height="120.809px" viewBox="0.115 4.596 193.772 120.809" enable-background="new 0.115 4.596 193.772 120.809"
+   xml:space="preserve">
+<g id="Logo_Tiagones">
+  <path id="sombrancelha" d="M3.126,26.931c-24.739-44.605,112.271-9.828,71.749-2.688c-15.732,2.772-55.046-25.852-63.473-0.209
+    C10.391,27.104,4.663,29.701,3.126,26.931z"/>
+  <path id="olho_direito" d="M34.666,43.82c-9.793-0.493-32.149,0.087-24.405-11.801c5.001-7.679,64.687-12.035,70.179,2.583
+    C85.261,47.445,47.895,44.485,34.666,43.82z"/>
+  <path id="olho_esquerdo" d="M185.811,16.093c-1.076-3.269-5.844-0.793-7.443-0.203c-6.133,2.26-14.801-6.409-46.333,3.328
+    c-26.659,2.387-35.832,30.681-6.286,29.816c12.51-0.365,32.427,17.305,48.011,6.078c22.952-16.544,7.599,31.382,14.121,36.89
+    c3.685,3.105,6.118-18.613,6.003-23.568C193.66,59.368,192.049,35.013,185.811,16.093z"/>
+  <path id="nariz" d="M113.675,87.163c-12.354-3.735-43.021-1.052-44.339-7.296c-0.815-3.86,60.684-5.902,50.241,5.935
+    C116.575,86.917,116.575,86.917,113.675,87.163z"/>
+  <path id="boca" d="M127.258,125.404c-19.518-7.229-46.085-11.87-66.406-5.1c-47.378,0,23.414-7.594,33.902-9.22
+    C111.68,108.465,168.982,118.421,127.258,125.404z"/>
+</g>
+</svg></a>{% endif %}<a href="{{site.baseurl}}sobre-mim/" class="nav-link nav-about">Sobre mim <span class="description">Saiba um pouco mais sobre quem sou eu</span></a><a href="#0" class="nav-link nav-portfolio">Portfólio <span class="description">Projetos que trabalhei com meus clientes</span></a><a href="#0" class="nav-link nav-blog">Blog <span class="description">Um pouco sobre minha vida e como faço as coisas</span></a><a href="#0" class="nav-link nav-contact">Contato <span class="description">Caso queira me contratar ou apenas dizer oi</span></a></nav></header>
