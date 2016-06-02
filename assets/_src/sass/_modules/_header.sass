@@ -100,7 +100,6 @@
       .nav-about
         border-top: none
 
-
   // Menu for Medium Devices
   @media (min-width: 768px)
     nav
@@ -116,7 +115,7 @@
         align-self: baseline
         width: 175px
         height: 175px
-        margin: auto 30px
+        margin: auto 2rem
         border: 7px solid $black
         border-radius: 50%
         display: flex
@@ -195,6 +194,19 @@
         .description
           &:before
             content: '04:'
+
+  // Menu for Small to Medium Devices
+  @media (min-width: 768px) and (max-width: 992px)
+    nav
+      .logo
+        width: 120px
+        height: 120px
+        border-width: 5px
+        margin: auto 1rem
+      .nav-link
+        padding: 3.5rem 1.5rem 2rem 1.5rem;
+        font:
+          size: 1.1rem
 
 // Make the Header White when needed
 .white-header
