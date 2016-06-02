@@ -1,7 +1,9 @@
 //- Header do site
 header.site-header
   .container
+    input(type="checkbox" id="menu-toggle")
     nav
+      label(for="menu-toggle" class="menu-toggle")
       a(href="{{site.baseurl}}").logo
         include ./logo.html
       a(href="{{site.baseurl}}sobre-mim/").nav-link.nav-about.
