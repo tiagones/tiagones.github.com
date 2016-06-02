@@ -3,10 +3,18 @@
 
   #menu-toggle
     display: none
-  
-  #menu-toggle:checked + nav > .nav-link
-    transform: translate(0, 0)
-    transition: transform 0.5s ease-in-out
+    //Magic to show the menu
+    &:checked + nav > .nav-link
+      transform: translate(0, 0)
+      transition: transform 0.5s ease-in-out
+    &:checked + nav > .menu-toggle
+      background: none
+    &:checked + nav > .menu-toggle:before
+      transform: rotate(45deg) translate(5.5px, 0.5px)
+      transition: transform 0.5s ease-in-out
+    &:checked + nav > .menu-toggle:after
+      transform: rotate(-45deg) translate(5.5px, 0.5px)
+      transition: transform 0.5s ease-in-out
 
   nav
     .nav-links
@@ -24,26 +32,31 @@
       .menu-toggle
         display: block
         position: absolute
-        background-color: $white
-        height: 2px
+        background:
+          image: repeating-linear-gradient(to right, $white, $white 18px)
+          size: 2px
+          position: center
+          repeat: repeat-x
+        height: 20px
         width: 18px
-        top: 19px
+        top: 14px
         left: 20px
         cursor: pointer
-        user-select: none
+        transition: background-color 0.5s ease-in-out
+        transition-delay: 1s
         &:before, &:after
-          content: ''
+          content: ' '
           display: block
           position: relative
           background-color: $white
           height: 2px
           width: 18px
+          transform: rotate(0) translate(0, 0)
+          transition: transform 0.5s ease-in-out
         &:before
-          top: 4px
-          background-color: $white
+          top: 5px
         &:after
-          top: 6px
-          background-color: $white
+          bottom: -11px
 
       .logo
         padding: 10px
@@ -57,7 +70,7 @@
           width: 50px
           margin: 0 auto
           path
-            fill: $white
+            fill: $white !important
 
 
       .nav-link
@@ -98,6 +111,9 @@
       display: flex
       flex-direction: row
       justify-content: space-between
+
+      .menu-toggle
+        display: none
 
       .logo
         order: 2
@@ -163,31 +179,31 @@
         order: 0
         .description
           &:before
-            content: '01.'
+            content: '01:'
 
       .nav-portfolio
         order: 1
         .description
           &:before
-            content: '02.'
+            content: '02:'
 
       .nav-blog
         order: 3
         .description
           &:before
-            content: '03.'
+            content: '03:'
 
       .nav-contact
         order: 4
         .description
           &:before
-            content: '04.'
+            content: '04:'
 
 // Make the Header White when needed
 .white-header
   .site-header
     .logo
-      border-color: rgba(255, 255 ,255 , 0.7)
+      border-color: $white-transparent
       &:hover
         background-color: transparent
       &:hover > svg > g > path
@@ -195,10 +211,10 @@
       svg
         path
           //fill: $white
-          fill: rgba(255, 255 ,255 , 0.7)
+          fill: $white-transparent
 
     .nav-link
       color: $white
       &:hover
         color: $black
-        background-color: rgba(255, 255 ,255 , 0.6)
+        background-color: $white-transparent
