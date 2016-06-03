@@ -1,33 +1,59 @@
+/* START OF THE GRID */
+.container, .container-fluid
+  display: flex
+  flex-wrap: wrap
+
+// Container: Have fixed width for many screens and centered content
 .container
-  padding-left: 1.334rem
-  padding-right: 1.334rem
-
-// Extra small devices (phones)
-@media (max-width: 543px)
-  .container
+  margin: 0 auto
+  
+  // Extra small devices (phones)
+  @media (max-width: 543px)
     max-width: 543px
-    margin: 0 auto
+    padding: 0 ($grid-gutter/2)
 
-// Small devices (phones, landscape)
-@media (min-width: 544px)
-  .container
+  // Small devices (phones, landscape)
+  @media (min-width: 544px)
     max-width: 544px
-    margin: 0 auto
 
-// Medium devices (tablets)
-@media (min-width: 768px)
-  .container
+  // Medium devices (tablets)
+  @media (min-width: 768px)
     max-width: 768px
-    margin: 0 auto
 
-// Large devices (desktops)
-@media (min-width: 992px)
-  .container
+  // Large devices (desktops)
+  @media (min-width: 992px)
     max-width: 992px
-    margin: 0 auto
 
-// Extra large devices (large desktops)
-@media (min-width: 1200px)
-  .container
+  // Extra large devices (large desktops)
+  @media (min-width: 1200px)
     max-width: 1200px
-    margin: 0 auto
+
+  // Full HD devices (FullHD desktops)
+  @media (min-width: 1650px)
+    max-width: 1650px
+
+// Column
+.column
+  flex: 1
+  box-sizing: border-box
+
+// Sizing
+.column-1of2
+  flex: 0 0 50%
+  
+.column-1of3
+  flex: 0 0 33.3333%
+  
+.column-1of4
+  flex: 0 0 25%
+
+.column-full
+  flex: 0 0 100%
+  
+// When need to have gutters 
+.column-gutter
+  padding: 0 ($grid-gutter/2)
+  &:first-of-type
+    padding-left: 0
+  &:last-of-type
+    padding-right: 0
