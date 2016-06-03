@@ -391,7 +391,7 @@ body {
 body {
   background: #fff;
   font-family: "Nunito", sans-serif;
-  font-size: 1.07rem;
+  font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.15;
   color: #333;
@@ -422,6 +422,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Varela Round", sans-serif; }
+
+h1 {
+  font-size: 2.5rem; }
 
 p span {
   font-size: 0.95rem;
@@ -617,13 +620,13 @@ b {
           display: block;
           position: relative;
           font-family: "Nunito", sans-serif;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           margin: 0.3rem 0 0.3rem 1rem; }
           .site-header nav .nav-link .description:before {
             position: absolute;
             top: -50px;
             left: -1.2rem;
-            font-size: 0.8rem; }
+            font-size: 0.9rem; }
           .site-header nav .nav-link .description:after {
             content: ';'; }
       .site-header nav .nav-about {
@@ -654,7 +657,9 @@ b {
       margin: auto 1rem; }
     .site-header nav .nav-link {
       padding: 3.5rem 1.5rem 2rem 1.5rem;
-      font-size: 1.1rem; } }
+      font-size: 1.1rem; }
+      .site-header nav .nav-link .description {
+        font-size: 0.85rem; } }
 
 .white-header .site-header .logo {
   border-color: rgba(255, 255, 255, 0.7); }
