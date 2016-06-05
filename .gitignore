@@ -23,7 +23,6 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 ehthumbs.db
-Icon?
 *.swp
 
 # Jekyll Specific
