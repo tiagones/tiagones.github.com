@@ -20,9 +20,17 @@
         width: 3.33rem
         color: $black
         overflow: hidden
+        &:hover
+          background-color: $black
+          color: $white
+          path
+            fill: $white
         span
+          display: none
+        svg
           align-self: center
-          font-size: 0.66em
+          path
+            fill: $black
 
       .linkedin
         &:hover
@@ -80,6 +88,9 @@
     .social
       .social-link
         color: $white
+        svg
+          path
+            fill: $white
 
   // Footer for Medium Devices
   @media (max-width: 767px)
