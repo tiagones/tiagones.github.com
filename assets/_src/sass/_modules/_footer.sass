@@ -5,57 +5,62 @@
     display: flex
 
     p
-      font-size: 0.8em
-      margin: 0
       align-self: center
+      font-size: .8em
+      margin: 0
 
     .social
-      margin-bottom: 0
       display: flex
+      margin-bottom: 0
 
       .social-link
-        display: flex
-        justify-content: center
-        height: 3.33rem
-        width: 3.33rem
         color: $black
+        display: flex
+        height: 3.33rem
+        justify-content: center
         overflow: hidden
+        width: 3.33rem
+
         &:hover
           background-color: $black
           color: $white
+
           path
             fill: $white
+
         span
           display: none
+
         svg
           align-self: center
+
           path
             fill: $black
 
       .linkedin
         &:hover
-          color: $white
           background-color: $linkedin
+          color: $white
 
       .codepen
         &:hover
-          color: $white
           background-color: $codepen
+          color: $white
 
       .github
         &:hover
-          color: $white
           background-color: $github
+          color: $white
 
       .dribbble
         &:hover
-          color: $white
           background-color: $dribbble
+          color: $white
 
       .behance
         &:hover
-          color: $white
           background-color: $behance
+          color: $white
 
   // Footer for Small Devices
   @media (max-width: 767px)
@@ -64,8 +69,8 @@
 
       .social
         border-top: 2px solid $black
-        margin-top: 1rem
         justify-content: space-around
+        margin-top: 1rem
 
         .social-link
           //flex-basis: 25%
@@ -88,6 +93,7 @@
     .social
       .social-link
         color: $white
+
         svg
           path
             fill: $white

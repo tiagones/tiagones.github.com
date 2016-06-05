@@ -1,16 +1,21 @@
-/* START OF THE GRID */
-.container, .container-fluid
+/*!
+ * Start of the Grid
+ */
+.container,
+.container-fluid
   display: flex
   flex-wrap: wrap
 
-// Container: Have fixed width for many screens and centered content
+/*!
+ * Container: Have fixed width for many screens and centered content
+ */
 .container
   margin: 0 auto
-  
+
   // Extra small devices (phones)
   @media (max-width: 543px)
     max-width: 543px
-    padding: 0 ($grid-gutter/2)
+    padding: 0 ($grid-gutter / 2)
 
   // Small devices (phones, landscape)
   @media (min-width: 544px)
@@ -32,28 +37,32 @@
   @media (min-width: 1650px)
     max-width: 1650px
 
-// Column
+/*!
+ * Comumns
+ */
 .column
-  flex: 1
   box-sizing: border-box
+  flex: 1
 
 // Sizing
 .column-1of2
   flex: 0 0 50%
-  
+
 .column-1of3
   flex: 0 0 33.3333%
-  
+
 .column-1of4
   flex: 0 0 25%
 
 .column-full
   flex: 0 0 100%
-  
-// When need to have gutters 
+
+// When need to have gutters
 .column-gutter
-  padding: 0 ($grid-gutter/2)
+  padding: 0 ($grid-gutter / 2)
+
   &:first-of-type
     padding-left: 0
+
   &:last-of-type
     padding-right: 0
