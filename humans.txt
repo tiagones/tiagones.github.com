@@ -3,12 +3,13 @@
 
 # TEAM
 
-  Tiago Pereira Dantas -- Designer
+  Tiago Pereira Dantas -- Designer/Developer
 
 # THANKS
 
   Travis Neilson - http://travisneilson.com/
   Shane Osbourne - https://github.com/shakyShane
+  Chris Coyier   - http://chriscoyier.net/
 
 # TECHNOLOGY COLOPHON
 
