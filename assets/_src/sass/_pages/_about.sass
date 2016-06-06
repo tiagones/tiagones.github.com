@@ -1,0 +1,90 @@
+#about
+  ::selection
+    background: $yellow
+
+  a
+    &::selection
+      color: $white
+
+  img
+    &::selection
+      background: transparent
+
+  @media (max-width: 767px)
+    .site-header
+      nav
+        background-color: $yellow
+        border-color: darken($yellow, 25%)
+
+  .about-header-wrapper
+    @media (min-width: 768px)
+      background:
+        color: $yellow
+        image: url('/assets/img/foto_bh.jpg')
+        repeat: no-repeat
+        position: center
+        size: cover
+      margin-bottom: 2rem
+      position: relative
+      padding-bottom: 6rem
+      //z-index: 0
+
+      &:before
+        background:
+          color: transparentize($yellow, .6)
+        content: ' '
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        //z-index: 1
+
+    @media (min-width: 992px)
+      padding-bottom: 8rem
+
+    @media (min-width: 1200px)
+      padding-bottom: 11rem
+
+    @media (min-width: 1650px)
+      padding-bottom: 14rem
+
+  .sidebar
+    text-align: center
+
+    .tiagovatar
+      @media (min-width: 768px)
+        margin-top: -117px
+        position: relative
+        z-index: 3
+
+      @media (min-width: 992px)
+        margin-top: -145px
+
+      @media (min-width: 1200px)
+        margin-top: -172px
+
+      @media (min-width: 1650px)
+        margin-top: -215px
+
+    h2
+      small
+        color: $silver
+
+  .content
+    a
+      color: $yellow
+      text-decoration: underline
+
+      &:hover,
+      &:focus
+        color: transparentize($yellow, .3)
+
+    @media (max-width: 767px)
+      order: -1
+
+.block
+  padding: ($grid-gutter / 4)
+  text-align: center
+  border: 1px solid #C2CFD8
+  background-color: #E1EEFF
