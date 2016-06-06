@@ -10,8 +10,13 @@ header.site-header
     a(href="{{site.baseurl}}").logo
       {% include icons/logo.html %}
     {% endif  %}
+    {% if page.layout == 'about' %}
+    a(href="{{site.baseurl}}sobre-mim/").nav-link.nav-about.active.
+      Sobre mim #[span.description Saiba um pouco mais sobre quem sou eu]
+    {% else %}
     a(href="{{site.baseurl}}sobre-mim/").nav-link.nav-about.
       Sobre mim #[span.description Saiba um pouco mais sobre quem sou eu]
+    {% endif  %}
     a(href="#0").nav-link.nav-portfolio.
       Portfólio #[span.description Projetos que trabalhei com meus clientes]
     a(href="#0").nav-link.nav-blog.
