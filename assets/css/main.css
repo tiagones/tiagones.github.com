@@ -995,6 +995,8 @@ img {
     margin-bottom: 2rem;
     position: relative;
     padding-bottom: 6rem; }
+    #about .about-header-wrapper .site-header nav .nav-about .description:before {
+      content: '01:active'; }
     #about .about-header-wrapper:before {
       background-color: rgba(255, 220, 0, 0.4);
       content: ' ';
