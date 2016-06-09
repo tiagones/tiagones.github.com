@@ -3,8 +3,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("//fonts.googleapis.com/css?family=Varela+Round");
-@import url("//fonts.googleapis.com/css?family=Nunito:700,300");
+@import url("//fonts.googleapis.com/css?family=Varela+Round|Nunito:300,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -470,7 +469,7 @@ b {
   font-weight: 700; }
 
 hr {
-  border: none;
+  border: 0;
   border-top: 2px solid #f2f2f2; }
 
 /*!
@@ -690,8 +689,8 @@ hr {
         color: #333;
         -ms-flex: 1;
             flex: 1;
-        size: 1.2rem;
         padding: 6rem 3rem 5rem;
+        size: 1.2rem;
         width: 20%; }
         .site-header nav .nav-link:hover, .site-header nav .nav-link.active {
           background-color: #333;
@@ -740,8 +739,8 @@ hr {
           content: '04:'; } }
   @media (min-width: 768px) and (max-width: 992px) {
     .site-header nav .logo {
-      border-width: 5px;
       background-size: 144px;
+      border-width: 5px;
       height: 120px;
       margin: auto 1rem;
       width: 120px; }
@@ -920,8 +919,8 @@ input[type='button'] {
     border-color: rgba(255, 255, 255, 0.7); } }
 
 img {
-  vertical-align: middle;
-  height: auto; }
+  height: auto;
+  vertical-align: middle; }
 
 .img-responsive {
   max-width: 100%; }
@@ -930,26 +929,26 @@ img {
   border-radius: 50%; }
 
 #landpage {
-  color: #fff;
+  -ms-flex-align: center;
+      align-items: center;
   background-color: #d9d9d9;
   background-image: none;
-  background-repeat: no-repeat;
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 100vh;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 100vh; }
+      justify-content: space-around; }
   #landpage .site-header {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     margin-bottom: 0; }
   #landpage .hero-banner {
     text-align: center; }
@@ -989,22 +988,22 @@ img {
   #about .about-header-wrapper {
     background-color: #ffdc00;
     background-image: url("/assets/img/foto_bh.jpg");
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2rem;
-    position: relative;
-    padding-bottom: 6rem; }
+    padding-bottom: 6rem;
+    position: relative; }
     #about .about-header-wrapper .site-header nav .nav-about .description:before {
       content: '01:active'; }
     #about .about-header-wrapper:before {
       background-color: rgba(255, 220, 0, 0.4);
+      bottom: 0;
       content: ' ';
-      position: absolute;
-      top: 0;
       left: 0;
+      position: absolute;
       right: 0;
-      bottom: 0; } }
+      top: 0; } }
 
 @media (min-width: 992px) {
   #about .about-header-wrapper {
@@ -1047,9 +1046,3 @@ img {
   #about .content {
     -ms-flex-order: -1;
         order: -1; } }
-
-.block {
-  padding: 0.5rem;
-  text-align: center;
-  border: 1px solid #C2CFD8;
-  background-color: #E1EEFF; }
