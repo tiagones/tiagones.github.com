@@ -1,6 +1,6 @@
 #about
   ::selection
-    background: $yellow
+    background: $blue
 
   a
     &::selection
@@ -13,13 +13,13 @@
   @media (max-width: 767px)
     .site-header
       nav
-        background-color: $yellow
-        border-color: darken($yellow, 25%)
+        background-color: $blue
+        border-color: darken($blue, 25%)
 
   .about-header-wrapper
     @media (min-width: 768px)
       background:
-        color: $yellow
+        color: $blue
         image: url('/assets/img/foto_bh.jpg')
         position: center
         repeat: no-repeat
@@ -36,7 +36,7 @@
                 content: '01:active'
 
       &:before
-        background-color: transparentize($yellow, .6)
+        background-color: transparentize($blue, .6)
         bottom: 0
         content: ' '
         left: 0
@@ -79,12 +79,12 @@
 
   .content
     a
-      color: $yellow
+      color: $blue
       text-decoration: underline
 
       &:hover,
       &:focus
-        color: transparentize($yellow, .3)
+        color: transparentize($blue, .3)
 
     @media (max-width: 767px)
       order: -1

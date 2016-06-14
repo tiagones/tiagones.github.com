@@ -3,6 +3,17 @@
   position: relative
   z-index: 0
 
+  nav
+    position: relative
+
+    &:before
+      background-image: linear-gradient(to right, $blue, $green, $yellow, $red)
+      content: ''
+      height: 6px
+      position: absolute
+      top: 0
+      width: 100%
+
   #menu-toggle
     display: none
 
@@ -31,7 +42,8 @@
     nav
       background-color: $black
       border-bottom: 2px solid darken($black, 25%)
-      height: 50px
+      height: 56px
+      padding-top: 6px
       position: relative
 
       .menu-toggle
@@ -45,7 +57,7 @@
         height: 20px
         left: 20px
         position: absolute
-        top: 14px
+        top: 20px
         transition: background-color .5s ease-in-out
         transition-delay: 1s
         width: 18px

@@ -25,6 +25,7 @@ input[type='button']
   &:active,
   &:focus
     outline: 0
+    transition: border-color .5s ease-in-out, color .5s ease-in-out
 
 /*!
  * Size
@@ -38,9 +39,10 @@ input[type='button']
 /*!
  * Colors
  */
+
 .btn-black
-  border-color: $black
-  color: $black
+  border-color: lighten($black, 57.5%)
+  color: lighten($black, 19.4%)
 
   &:hover,
   &:active,
