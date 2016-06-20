@@ -1,6 +1,6 @@
 footer.site-footer
   div.footer-wrap
-    p Sobre este site
+    p #[a(href="{{ site.baseurl }}sobre-este-site.html") Sobre este site]
     nav.social
       {% for social in site.data.settings.social %}
       a(href="{{ social.link }}" target="_blank" class="social-link {{ social.icon }}")

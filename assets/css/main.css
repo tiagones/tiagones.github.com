@@ -448,7 +448,6 @@ h1 {
 
 .page-title {
   margin-bottom: 4rem;
-  position: relative;
   text-align: center; }
   .page-title:before, .page-title:after {
     background-color: #c6c6c6;
@@ -457,7 +456,8 @@ h1 {
     height: 3px;
     left: calc(50% - 2rem);
     position: absolute;
-    width: 4rem; }
+    width: 4rem;
+    z-index: -1; }
   @media (max-width: 767px) {
     .page-title {
       margin-bottom: 2rem; } }
@@ -758,8 +758,7 @@ hr {
         width: 20%; }
         .site-header nav .nav-link:hover {
           background-color: #333;
-          color: #fff;
-          z-index: 1; }
+          color: #fff; }
           .site-header nav .nav-link:hover .description {
             color: #bfbfbf; }
         .site-header nav .nav-link:before {
@@ -785,24 +784,32 @@ hr {
         border-color: #5294e2;
         -ms-flex-order: 0;
             order: 0; }
+        .site-header nav .nav-about:hover .description:before {
+          content: '01:hover'; }
         .site-header nav .nav-about .description:before {
           content: '01:'; }
       .site-header nav .nav-portfolio {
         border-color: #2ecc40;
         -ms-flex-order: 1;
             order: 1; }
+        .site-header nav .nav-portfolio:hover .description:before {
+          content: '02:hover'; }
         .site-header nav .nav-portfolio .description:before {
           content: '02:'; }
       .site-header nav .nav-blog {
         border-color: #ffdc00;
         -ms-flex-order: 3;
             order: 3; }
+        .site-header nav .nav-blog:hover .description:before {
+          content: '03:hover'; }
         .site-header nav .nav-blog .description:before {
           content: '03:'; }
       .site-header nav .nav-contact {
         border-color: #f46067;
         -ms-flex-order: 4;
             order: 4; }
+        .site-header nav .nav-contact:hover .description:before {
+          content: '04:hover'; }
         .site-header nav .nav-contact .description:before {
           content: '04:'; } }
   @media (min-width: 768px) and (max-width: 992px) {
@@ -1129,3 +1136,217 @@ img {
     #about .page-content main {
       border-top: 2px solid #c6c6c6;
       padding-top: 2rem; } }
+
+#portfolio ::-moz-selection {
+  background: #2ecc40; }
+
+#portfolio ::selection {
+  background: #2ecc40; }
+
+#portfolio a::-moz-selection {
+  color: #fff; }
+
+#portfolio a::selection {
+  color: #fff; }
+
+#portfolio img::-moz-selection {
+  background: transparent; }
+
+#portfolio img::selection {
+  background: transparent; }
+
+#portfolio .site-header nav .nav-portfolio.active {
+  background-color: #2ecc40;
+  border-color: #333;
+  color: #fff;
+  z-index: 1; }
+  #portfolio .site-header nav .nav-portfolio.active .description {
+    color: #93e79c; }
+    #portfolio .site-header nav .nav-portfolio.active .description:before {
+      content: '02:active'; }
+
+@media (max-width: 767px) {
+  #portfolio .site-header nav {
+    background-color: #2ecc40;
+    border-color: #17641f; }
+    #portfolio .site-header nav .nav-portfolio.active {
+      background-color: rgba(46, 204, 64, 0.7);
+      border-bottom: 0; } }
+
+#portfolio .page-content a,
+#portfolio .page-title a {
+  color: #2ecc40;
+  text-decoration: underline; }
+  #portfolio .page-content a:hover, #portfolio .page-content a:focus,
+  #portfolio .page-title a:hover,
+  #portfolio .page-title a:focus {
+    color: rgba(46, 204, 64, 0.7); }
+
+#portfolio .page-content {
+  border-color: #2ecc40; }
+  #portfolio .page-content main h2:before, #portfolio .page-content main h2:after {
+    color: #c6c6c6;
+    font-family: 'Nunito', sans-serif; }
+  #portfolio .page-content main h2:before {
+    content: '\27'; }
+  #portfolio .page-content main h2:after {
+    content: '\A0 \27'; }
+
+#blog ::-moz-selection {
+  background: #ffdc00; }
+
+#blog ::selection {
+  background: #ffdc00; }
+
+#blog a::-moz-selection {
+  color: #fff; }
+
+#blog a::selection {
+  color: #fff; }
+
+#blog img::-moz-selection {
+  background: transparent; }
+
+#blog img::selection {
+  background: transparent; }
+
+#blog .site-header nav .nav-blog.active {
+  background-color: #ffdc00;
+  border-color: #333;
+  color: #fff;
+  z-index: 1; }
+  #blog .site-header nav .nav-blog.active .description {
+    color: #fff5b3; }
+    #blog .site-header nav .nav-blog.active .description:before {
+      content: '03:active'; }
+
+@media (max-width: 767px) {
+  #blog .site-header nav {
+    background-color: #ffdc00;
+    border-color: #806e00; }
+    #blog .site-header nav .nav-blog.active {
+      background-color: rgba(255, 220, 0, 0.7);
+      border-bottom: 0; } }
+
+#blog .page-content a,
+#blog .page-title a {
+  color: #ffdc00;
+  text-decoration: underline; }
+  #blog .page-content a:hover, #blog .page-content a:focus,
+  #blog .page-title a:hover,
+  #blog .page-title a:focus {
+    color: rgba(255, 220, 0, 0.7); }
+
+#blog .page-content {
+  border-color: #ffdc00; }
+  #blog .page-content main h2:before, #blog .page-content main h2:after {
+    color: #c6c6c6;
+    font-family: 'Nunito', sans-serif; }
+  #blog .page-content main h2:before {
+    content: '\27'; }
+  #blog .page-content main h2:after {
+    content: '\A0 \27'; }
+
+#contact ::-moz-selection {
+  background: #f46067; }
+
+#contact ::selection {
+  background: #f46067; }
+
+#contact a::-moz-selection {
+  color: #fff; }
+
+#contact a::selection {
+  color: #fff; }
+
+#contact img::-moz-selection {
+  background: transparent; }
+
+#contact img::selection {
+  background: transparent; }
+
+#contact .site-header nav .nav-contact.active {
+  background-color: #f46067;
+  border-color: #333;
+  color: #fff;
+  z-index: 1; }
+  #contact .site-header nav .nav-contact.active .description {
+    color: #fcd7d9; }
+    #contact .site-header nav .nav-contact.active .description:before {
+      content: '04:active'; }
+
+@media (max-width: 767px) {
+  #contact .site-header nav {
+    background-color: #f46067;
+    border-color: #c70e17; }
+    #contact .site-header nav .nav-contact.active {
+      background-color: rgba(244, 96, 103, 0.7);
+      border-top: 0; } }
+
+#contact .page-content a,
+#contact .page-title a {
+  color: #f46067;
+  text-decoration: underline; }
+  #contact .page-content a:hover, #contact .page-content a:focus,
+  #contact .page-title a:hover,
+  #contact .page-title a:focus {
+    color: rgba(244, 96, 103, 0.7); }
+
+#contact .page-content {
+  border-color: #f46067; }
+  #contact .page-content main h2:before, #contact .page-content main h2:after {
+    color: #c6c6c6;
+    font-family: 'Nunito', sans-serif; }
+  #contact .page-content main h2:before {
+    content: '\27'; }
+  #contact .page-content main h2:after {
+    content: '\A0 \27'; }
+
+#about-this-site {
+  background-color: #5294e2;
+  background-image: url("/assets/img/bg-blue-blueprint.jpg"); }
+  #about-this-site ::-moz-selection {
+    background: #5294e2; }
+  #about-this-site ::selection {
+    background: #5294e2; }
+  #about-this-site a::-moz-selection {
+    color: #fff; }
+  #about-this-site a::selection {
+    color: #fff; }
+  #about-this-site img::-moz-selection {
+    background: transparent; }
+  #about-this-site img::selection {
+    background: transparent; }
+  #about-this-site .site-header nav .nav-portfolio.active {
+    background-color: #5294e2;
+    border-color: #333;
+    color: #fff;
+    z-index: 1; }
+    #about-this-site .site-header nav .nav-portfolio.active .description {
+      color: #bfd8f4; }
+      #about-this-site .site-header nav .nav-portfolio.active .description:before {
+        content: '02:active'; }
+  @media (max-width: 767px) {
+    #about-this-site .site-header nav {
+      background-color: #5294e2;
+      border-color: #1a559b; }
+      #about-this-site .site-header nav .nav-portfolio.active {
+        background-color: rgba(82, 148, 226, 0.7);
+        border-bottom: 0; } }
+  #about-this-site .page-content a,
+  #about-this-site .page-title a {
+    color: #5294e2;
+    text-decoration: underline; }
+    #about-this-site .page-content a:hover, #about-this-site .page-content a:focus,
+    #about-this-site .page-title a:hover,
+    #about-this-site .page-title a:focus {
+      color: rgba(82, 148, 226, 0.7); }
+  #about-this-site .page-content {
+    border-color: #5294e2; }
+    #about-this-site .page-content main h2:before, #about-this-site .page-content main h2:after {
+      color: #c6c6c6;
+      font-family: 'Nunito', sans-serif; }
+    #about-this-site .page-content main h2:before {
+      content: '\27'; }
+    #about-this-site .page-content main h2:after {
+      content: '\A0 \27'; }

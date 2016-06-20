@@ -185,7 +185,6 @@
         &:hover
           background-color: $black
           color: $white
-          z-index: 1
 
           .description
             color: darken($white, 25%)
@@ -219,6 +218,11 @@
         border-color: $blue
         order: 0
 
+        &:hover
+          .description
+            &:before
+              content: '01:hover'
+
         .description
           &:before
             content: '01:'
@@ -226,6 +230,11 @@
       .nav-portfolio
         border-color: $green
         order: 1
+
+        &:hover
+          .description
+            &:before
+              content: '02:hover'
 
         .description
           &:before
@@ -235,6 +244,11 @@
         border-color: $yellow
         order: 3
 
+        &:hover
+          .description
+            &:before
+              content: '03:hover'
+
         .description
           &:before
             content: '03:'
@@ -242,6 +256,11 @@
       .nav-contact
         border-color: $red
         order: 4
+
+        &:hover
+          .description
+            &:before
+              content: '04:hover'
 
         .description
           &:before

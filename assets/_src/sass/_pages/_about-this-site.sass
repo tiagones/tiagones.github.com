@@ -1,0 +1,67 @@
+#about-this-site
+  background:
+    color: $blue
+    image: url('/assets/img/bg-blue-blueprint.jpg')
+
+  ::selection
+    background: $blue
+
+  a
+    &::selection
+      color: $white
+
+  img
+    &::selection
+      background: transparent
+
+  .site-header
+    nav
+      .nav-portfolio
+        &.active
+          background-color: $blue
+          border-color: $black
+          color: $white
+          z-index: 1
+
+          .description
+            color: lighten($blue, 25%)
+
+            &:before
+              content: '02:active'
+
+  @media (max-width: 767px)
+    .site-header
+      nav
+        background-color: $blue
+        border-color: darken($blue, 25%)
+
+        .nav-portfolio
+          &.active
+            background-color: transparentize($blue, .3)
+            border-bottom: 0
+
+  .page-content,
+  .page-title
+    a
+      color: $blue
+      text-decoration: underline
+
+      &:hover,
+      &:focus
+        color: transparentize($blue, .3)
+
+  .page-content
+    border-color: $blue
+
+    main
+      h2
+        &:before,
+        &:after
+          color: $silver
+          font-family: 'Nunito', sans-serif
+
+        &:before
+          content: '\27'
+
+        &:after
+          content: '\A0 \27'

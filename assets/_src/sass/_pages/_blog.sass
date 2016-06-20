@@ -1,0 +1,63 @@
+#blog
+  ::selection
+    background: $yellow
+
+  a
+    &::selection
+      color: $white
+
+  img
+    &::selection
+      background: transparent
+
+  .site-header
+    nav
+      .nav-blog
+        &.active
+          background-color: $yellow
+          border-color: $black
+          color: $white
+          z-index: 1
+
+          .description
+            color: lighten($yellow, 35%)
+
+            &:before
+              content: '03:active'
+
+  @media (max-width: 767px)
+    .site-header
+      nav
+        background-color: $yellow
+        border-color: darken($yellow, 25%)
+
+        .nav-blog
+          &.active
+            background-color: transparentize($yellow, .3)
+            border-bottom: 0
+
+  .page-content,
+  .page-title
+    a
+      color: $yellow
+      text-decoration: underline
+
+      &:hover,
+      &:focus
+        color: transparentize($yellow, .3)
+
+  .page-content
+    border-color: $yellow
+
+    main
+      h2
+        &:before,
+        &:after
+          color: $silver
+          font-family: 'Nunito', sans-serif
+
+        &:before
+          content: '\27'
+
+        &:after
+          content: '\A0 \27'
