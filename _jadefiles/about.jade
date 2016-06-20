@@ -1,5 +1,10 @@
 .page-title
   h1 Sobre mim
+  ul
+    li
+      a(href="#pessoal") Pessoal
+    li
+      a(href="#profissional") Profissional
 
 .container.page-content
   aside.column.column-gutter.column-1of4
@@ -12,7 +17,7 @@
     #[a(href="#0" class="btn btn-blue") Currículo]
 
   main.column.column-gutter
-    h2 Quem sou eu?
+    h2 #[a(name="pessoal")] Pessoal
     p.
       Olá meu nome é Tiago Pereira Dantas, o “Tiagones”, tenho 33 anos, moro em Belo Horizonte (MG) e  gosto de estar envolvido com Tecnologia, Comércio Eletrônico, Padrões de Desenvolvimento Web, Design de Interfaces e Software Open Source.
     p.
@@ -27,7 +32,7 @@
     p.
       Quando não estou fazendo nada disso acima, provavelmente estarei focado em me tornar um “ex-obeso”. No final de 2015 fiz a cirurgia de redução do estômago (Cirurgia bariátrica), conto um pouco desta experiência no meu #[a(href="{{site.baseurl}}blog/") Blog].
     hr
-    h2 Carreira
+    h2 #[a(name="profissional")] Profissional
     p.
       Atualmente trabalho na #[a(href="http://www.dhcp.com.br" target="_blank") DHCP Informática]. Sou o responsável pelo e-commerce da loja e também realizo os trabalhos gráficos de toda identidade visual da empresa.
     p.

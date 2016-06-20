@@ -15,6 +15,7 @@
       .nav-about
         &.active
           background-color: $blue
+          border-color: $black
           color: $white
           z-index: 1
 
@@ -35,19 +36,8 @@
             background-color: transparentize($blue, .3)
             border-bottom: 0
 
-  aside
-    text-align: center
-
-    .tiagovatar
-      margin-bottom: 1rem
-
-    h2
-      small
-        color: $silver
-
-  .page-content
-    border-color: $blue
-
+  .page-content,
+  .page-title
     a
       color: $blue
       text-decoration: underline
@@ -56,6 +46,48 @@
       &:focus
         color: transparentize($blue, .3)
 
-    main
+  .page-content
+    border-color: $blue
+
+    aside
+      text-align: center
+
+      @media (max-width: 543px)
+        small
+          font-size: 70%
+
       @media (max-width: 767px)
-        order: -1
+        padding-bottom: 2rem
+
+      @media (min-width: 544px) and (max-width: 1199px)
+        small
+          font-size: 55%
+
+      @media (min-width: 1200px) and (max-width: 1549px)
+        small
+          font-size: 65%
+
+      .tiagovatar
+        margin-bottom: 1rem
+
+      h2
+        small
+          color: $silver
+
+
+    main
+      h2
+        &:before,
+        &:after
+          color: $silver
+          font-family: 'Nunito', sans-serif
+
+        &:before
+          content: '\27'
+
+        &:after
+          content: '\A0 \27'
+
+      @media (max-width: 767px)
+        border-top: 2px solid $silver
+        padding-top: 2rem

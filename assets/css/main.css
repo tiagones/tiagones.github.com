@@ -430,26 +430,61 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Varela Round', sans-serif; }
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 300; }
   h1 small,
   h2 small,
   h3 small,
   h4 small,
   h5 small,
   h6 small {
-    font-size: 70%; }
+    font-size: 80%; }
 
 h1 {
-  font-size: 2.5rem; }
+  font-size: 3.2rem; }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 2.5rem; } }
 
 .page-title {
+  margin-bottom: 4rem;
+  position: relative;
   text-align: center; }
+  .page-title:before, .page-title:after {
+    background-color: #c6c6c6;
+    content: '';
+    display: block;
+    height: 3px;
+    left: calc(50% - 2rem);
+    position: absolute;
+    width: 4rem; }
+  @media (max-width: 767px) {
+    .page-title {
+      margin-bottom: 2rem; } }
   .page-title h1 {
-    margin-top: 0; }
+    margin-top: 0;
+    padding-top: 2rem; }
     .page-title h1:before {
       content: '< '; }
     .page-title h1:after {
       content: ' />'; }
+  .page-title ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0 0 1rem;
+    text-align: center; }
+    .page-title ul:before {
+      content: '[ '; }
+    .page-title ul:after {
+      content: ' ]'; }
+    .page-title ul li {
+      display: inline-block; }
+      .page-title ul li:before {
+        content: '\27 \A0'; }
+      .page-title ul li:after {
+        content: '\A0 \27 \A0 \2C \A0'; }
+      .page-title ul li:last-of-type:after {
+        content: '\A0 \27'; }
 
 .page-content {
   background-color: #fff;
@@ -459,6 +494,7 @@ h1 {
   padding: 2rem; }
   @media (max-width: 767px) {
     .page-content {
+      padding: 1rem;
       text-align: center; } }
   .page-content h2:first-of-type {
     margin-top: 0; }
@@ -483,7 +519,8 @@ ul {
 
 hr {
   border: 0;
-  border-top: 2px solid #f2f2f2; }
+  border-top: 2px solid #c6c6c6;
+  margin: 2rem 0; }
 
 /*!
  * Start of the Grid
@@ -502,8 +539,8 @@ hr {
   margin: 0 auto; }
   @media (max-width: 543px) {
     .container {
-      max-width: 543px;
-      margin: 0 1rem; } }
+      margin: 0 1rem;
+      max-width: 543px; } }
   @media (min-width: 544px) {
     .container {
       max-width: 544px; } }
@@ -565,7 +602,7 @@ hr {
       margin-bottom: 2rem; } }
   .site-header nav {
     position: relative; }
-    .site-header nav .nav-links {
+    .site-header nav .nav-link {
       font-family: 'Varela Round', sans-serif; }
     .site-header nav:before {
       background-image: linear-gradient(to right, #5294e2, #2ecc40, #ffdc00, #f46067);
@@ -712,6 +749,7 @@ hr {
             fill: #333; }
       .site-header nav .nav-link {
         background-color: transparent;
+        border-top: 6px solid transparent;
         color: #333;
         -ms-flex: 1;
             flex: 1;
@@ -744,21 +782,25 @@ hr {
           .site-header nav .nav-link .description:after {
             content: ';'; }
       .site-header nav .nav-about {
+        border-color: #5294e2;
         -ms-flex-order: 0;
             order: 0; }
         .site-header nav .nav-about .description:before {
           content: '01:'; }
       .site-header nav .nav-portfolio {
+        border-color: #2ecc40;
         -ms-flex-order: 1;
             order: 1; }
         .site-header nav .nav-portfolio .description:before {
           content: '02:'; }
       .site-header nav .nav-blog {
+        border-color: #ffdc00;
         -ms-flex-order: 3;
             order: 3; }
         .site-header nav .nav-blog .description:before {
           content: '03:'; }
       .site-header nav .nav-contact {
+        border-color: #f46067;
         -ms-flex-order: 4;
             order: 4; }
         .site-header nav .nav-contact .description:before {
@@ -1031,6 +1073,7 @@ img {
 
 #about .site-header nav .nav-about.active {
   background-color: #5294e2;
+  border-color: #333;
   color: #fff;
   z-index: 1; }
   #about .site-header nav .nav-about.active .description {
@@ -1046,21 +1089,43 @@ img {
       background-color: rgba(82, 148, 226, 0.7);
       border-bottom: 0; } }
 
-#about aside {
-  text-align: center; }
-  #about aside .tiagovatar {
-    margin-bottom: 1rem; }
-  #about aside h2 small {
-    color: #d9d9d9; }
+#about .page-content a,
+#about .page-title a {
+  color: #5294e2;
+  text-decoration: underline; }
+  #about .page-content a:hover, #about .page-content a:focus,
+  #about .page-title a:hover,
+  #about .page-title a:focus {
+    color: rgba(82, 148, 226, 0.7); }
 
 #about .page-content {
   border-color: #5294e2; }
-  #about .page-content a {
-    color: #5294e2;
-    text-decoration: underline; }
-    #about .page-content a:hover, #about .page-content a:focus {
-      color: rgba(82, 148, 226, 0.7); }
+  #about .page-content aside {
+    text-align: center; }
+    @media (max-width: 543px) {
+      #about .page-content aside small {
+        font-size: 70%; } }
+    @media (max-width: 767px) {
+      #about .page-content aside {
+        padding-bottom: 2rem; } }
+    @media (min-width: 544px) and (max-width: 1199px) {
+      #about .page-content aside small {
+        font-size: 55%; } }
+    @media (min-width: 1200px) and (max-width: 1549px) {
+      #about .page-content aside small {
+        font-size: 65%; } }
+    #about .page-content aside .tiagovatar {
+      margin-bottom: 1rem; }
+    #about .page-content aside h2 small {
+      color: #c6c6c6; }
+  #about .page-content main h2:before, #about .page-content main h2:after {
+    color: #c6c6c6;
+    font-family: 'Nunito', sans-serif; }
+  #about .page-content main h2:before {
+    content: '\27'; }
+  #about .page-content main h2:after {
+    content: '\A0 \27'; }
   @media (max-width: 767px) {
     #about .page-content main {
-      -ms-flex-order: -1;
-          order: -1; } }
+      border-top: 2px solid #c6c6c6;
+      padding-top: 2rem; } }

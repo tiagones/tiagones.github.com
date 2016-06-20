@@ -10,7 +10,7 @@
   nav
     position: relative
 
-    .nav-links
+    .nav-link
       font-family: 'Varela Round', sans-serif
 
     &:before
@@ -175,6 +175,7 @@
 
       .nav-link
         background-color: transparent
+        border-top: 6px solid transparent
         color: $black
         flex: 1
         padding: 6rem 3rem 5rem
@@ -215,6 +216,7 @@
             content: ';'
 
       .nav-about
+        border-color: $blue
         order: 0
 
         .description
@@ -222,6 +224,7 @@
             content: '01:'
 
       .nav-portfolio
+        border-color: $green
         order: 1
 
         .description
@@ -229,6 +232,7 @@
             content: '02:'
 
       .nav-blog
+        border-color: $yellow
         order: 3
 
         .description
@@ -236,6 +240,7 @@
             content: '03:'
 
       .nav-contact
+        border-color: $red
         order: 4
 
         .description
