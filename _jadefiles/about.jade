@@ -1,13 +1,17 @@
-.container
-  div.column.column-gutter.column-1of4.sidebar
+.page-title
+  h1 Sobre mim
+
+.container.page-content
+  aside.column.column-gutter.column-1of4
     .tiagovatar
-      img(src="/assets/img/tiagovatar.jpg", alt="{{ site.data.settings.name }}", title="{{ site.data.settings.name }}", class="img-responsive img-circle")
+      img(src="/assets/img/tiagovatar.jpg", alt="{{ site.data.settings.name }}", title="{{ site.data.settings.name }}", class="img-responsive")
     h2 {{ site.data.settings.name }}
       br
       #[small {{ site.data.settings.description }}]
+      
+    #[a(href="#0" class="btn btn-blue") Currículo]
 
-  div.column.column-gutter.content
-    h1.page-title Sobre mim
+  main.column.column-gutter
     h2 Quem sou eu?
     p.
       Olá meu nome é Tiago Pereira Dantas, o “Tiagones”, tenho 33 anos, moro em Belo Horizonte (MG) e  gosto de estar envolvido com Tecnologia, Comércio Eletrônico, Padrões de Desenvolvimento Web, Design de Interfaces e Software Open Source.
@@ -23,8 +27,27 @@
     p.
       Quando não estou fazendo nada disso acima, provavelmente estarei focado em me tornar um “ex-obeso”. No final de 2015 fiz a cirurgia de redução do estômago (Cirurgia bariátrica), conto um pouco desta experiência no meu #[a(href="{{site.baseurl}}blog/") Blog].
     hr
-    h2 Trabalho
+    h2 Carreira
     p.
       Atualmente trabalho na #[a(href="http://www.dhcp.com.br" target="_blank") DHCP Informática]. Sou o responsável pelo e-commerce da loja e também realizo os trabalhos gráficos de toda identidade visual da empresa.
     p.
       Nas horas vagas realizo trabalhos como Freelancer, caso queria me contratar fique a vontade para #[a(href="{{site.baseurl}}contato/") entrar em contato].
+    p.
+      Geralmente sou contratado para realizar os seguintes trabalhos para meus clientes:
+    ul
+      li Desenvolvimento Front-end
+        ul
+          li HTML
+          li CSS
+          li SEO
+          li Otimização de sites
+      li Magento
+        ul
+          li Desenvolvimento de temas
+          li Consultoria em e-commerce
+      li Wordpress
+        ul
+          li Desenvolvimento de temas
+      li Design
+        ul
+          li Identidade visual

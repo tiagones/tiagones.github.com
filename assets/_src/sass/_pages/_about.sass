@@ -10,74 +10,44 @@
     &::selection
       background: transparent
 
+  .site-header
+    nav
+      .nav-about
+        &.active
+          background-color: $blue
+          color: $white
+          z-index: 1
+
+          .description
+            color: lighten($blue, 25%)
+
+            &:before
+              content: '01:active'
+
   @media (max-width: 767px)
     .site-header
       nav
         background-color: $blue
         border-color: darken($blue, 25%)
 
-  .about-header-wrapper
-    @media (min-width: 768px)
-      background:
-        color: $blue
-        image: url('/assets/img/foto_bh.jpg')
-        position: center
-        repeat: no-repeat
-        size: cover
-      margin-bottom: 2rem
-      padding-bottom: 6rem
-      position: relative
+        .nav-about
+          &.active
+            background-color: transparentize($blue, .3)
+            border-bottom: 0
 
-      .site-header
-        nav
-          .nav-about
-            .description
-              &:before
-                content: '01:active'
-
-      &:before
-        background-color: transparentize($blue, .6)
-        bottom: 0
-        content: ' '
-        left: 0
-        position: absolute
-        right: 0
-        top: 0
-
-    @media (min-width: 992px)
-      padding-bottom: 8rem
-
-    @media (min-width: 1200px)
-      padding-bottom: 11rem
-
-    @media (min-width: 1650px)
-      padding-bottom: 14rem
-
-
-  .sidebar
+  aside
     text-align: center
 
     .tiagovatar
-      @media (min-width: 768px)
-        margin-top: -117px
-        position: relative
-        z-index: 3
-
-      @media (min-width: 992px)
-        margin-top: -145px
-
-      @media (min-width: 1200px)
-        margin-top: -172px
-
-      @media (min-width: 1650px)
-        margin-top: -215px
-
+      margin-bottom: 1rem
 
     h2
       small
         color: $silver
 
-  .content
+  .page-content
+    border-color: $blue
+
     a
       color: $blue
       text-decoration: underline
@@ -86,5 +56,6 @@
       &:focus
         color: transparentize($blue, .3)
 
-    @media (max-width: 767px)
-      order: -1
+    main
+      @media (max-width: 767px)
+        order: -1

@@ -1,5 +1,9 @@
 .site-footer
-  margin-top: 2rem
+  margin-top: 4rem
+
+  @media (max-width: 767px)
+    margin-top: 2rem
+
 
   .footer-wrap
     display: flex
@@ -24,7 +28,6 @@
         &:hover
           background-color: $black
           color: $white
-          transition: background-color .3s ease-in-out
 
           path
             fill: $white

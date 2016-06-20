@@ -4,22 +4,22 @@ header.site-header
   nav
     label(for="menu-toggle" class="menu-toggle")
     {% if page.layout == 'landpage' %}
-    div.logo
+    div(class="logo").
       {% include icons/logo.html %}
     {% else %}
-    a(href="{{site.baseurl}}").logo
+    a(href="{{site.baseurl}}" class="logo").
       {% include icons/logo.html %}
     {% endif  %}
     {% if page.layout == 'about' %}
-    a(href="{{site.baseurl}}sobre-mim/").nav-link.nav-about.active.
+    div(class="nav-link nav-about active").
       Sobre mim #[span.description Saiba um pouco mais sobre quem sou eu]
     {% else %}
-    a(href="{{site.baseurl}}sobre-mim/").nav-link.nav-about.
+    a(href="{{site.baseurl}}sobre-mim/" class="nav-link nav-about").
       Sobre mim #[span.description Saiba um pouco mais sobre quem sou eu]
     {% endif  %}
-    a(href="#0").nav-link.nav-portfolio.
+    a(href="#0" class="nav-link nav-portfolio").
       Portfólio #[span.description Projetos que trabalhei com meus clientes]
-    a(href="#0").nav-link.nav-blog.
+    a(href="#0" class="nav-link nav-blog").
       Blog #[span.description Um pouco sobre minha vida e como faço as coisas]
-    a(href="#0").nav-link.nav-contact.
+    a(href="#0" class="nav-link nav-contact").
       Contato #[span.description Caso queira me contratar ou apenas dizer oi]

@@ -17,7 +17,7 @@ input[type='button']
   padding: 0 2rem
   text:
     align: center
-    decoration: none
+    decoration: none !important
     transform: uppercase
   white-space: nowrap
 
@@ -25,7 +25,7 @@ input[type='button']
   &:active,
   &:focus
     outline: 0
-    transition: border-color .5s ease-in-out, color .5s ease-in-out
+    transition: all .2s
 
 /*!
  * Size
@@ -35,6 +35,9 @@ input[type='button']
   font-size: 1.5rem
   height: 3.5rem
   line-height: 3.35rem
+
+.btn-block
+  width: 100%
 
 /*!
  * Colors
@@ -59,3 +62,13 @@ input[type='button']
   &:focus
     border-color: $white-transparent
     color: $white-transparent
+
+.btn-blue
+  border-color: $blue
+  color: lighten($black, 19.4%) !important
+
+  &:hover,
+  &:active,
+  &:focus
+    border-color: transparentize($blue, .3)
+    color: transparentize($blue, .3) !important
