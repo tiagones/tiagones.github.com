@@ -14,7 +14,7 @@ input[type='button']
   height: 2rem
   letter-spacing: .1rem
   line-height: 1.85rem
-  padding: 0 2rem
+  padding: 0 1.3rem
   text:
     align: center
     decoration: none !important
@@ -65,10 +65,20 @@ input[type='button']
 
 .btn-blue
   border-color: $blue
-  color: lighten($black, 19.4%) !important
+  color: lighten($black, 19.4%)
 
   &:hover,
   &:active,
   &:focus
     border-color: transparentize($blue, .3)
-    color: transparentize($blue, .3) !important
+    color: transparentize($blue, .3)
+
+.btn-green
+  border-color: $green
+  color: lighten($black, 19.4%)
+
+  &:hover,
+  &:active,
+  &:focus
+    border-color: transparentize($green, .3)
+    color: transparentize($green, .3)

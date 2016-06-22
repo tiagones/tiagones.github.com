@@ -1,1 +1,3 @@
-<div class="page-title"><h1>{{ page.title }}</h1><ul><li><a href="#0">link 1</a></li><li><a href="#0">Link 2</a></li></ul></div><div class="container page-content"></div>
+<div class="page-title"><h1>{{ page.title }}</h1><ul><li><a href="#0">link 1</a></li><li><a href="#0">Link 2</a></li></ul></div><ul class="container page-content">{% for projects in site.data.portfolio.projects %}<li class="column column-1of3 project"><figure><img src="{{ projects.thumbnail }}" alt="{{ projects.name }}" class="img-responsive"/><figcaption><h2>{{ projects.name }}
+<small>{{ projects.field }}</small></h2><p>{{ projects.services }}</p><ul class="links">{% if projects.website != null %}<li><a href="{{ projects.website }}" target="_blank" class="btn btn-green">Visite o site</a></li>{% endif  %}
+{% if projects.case != null %}<li><a href="#0" class="btn btn-green">Veja o case</a></li>{% endif  %}</ul></figcaption></figure></li>{% endfor %}</ul>

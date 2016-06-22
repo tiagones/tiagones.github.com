@@ -379,6 +379,9 @@ textarea {
  */
 :root {
   font-size: 15px; }
+  @media (max-width: 767px) {
+    :root {
+      font-size: 12px; } }
 
 /*!
  * Gutter for the grid
@@ -438,13 +441,16 @@ h6 {
   h4 small,
   h5 small,
   h6 small {
-    font-size: 80%; }
+    font-size: 75%; }
 
 h1 {
   font-size: 3.2rem; }
-  @media (max-width: 767px) {
-    h1 {
-      font-size: 2.5rem; } }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.6rem; }
 
 .page-title {
   margin-bottom: 4rem;
@@ -863,7 +869,7 @@ input[type='button'] {
   height: 2rem;
   letter-spacing: .1rem;
   line-height: 1.85rem;
-  padding: 0 2rem;
+  padding: 0 1.3rem;
   text-align: center;
   text-decoration: none !important;
   text-transform: uppercase;
@@ -915,10 +921,17 @@ input[type='button'] {
 
 .btn-blue {
   border-color: #5294e2;
-  color: #646464 !important; }
+  color: #646464; }
   .btn-blue:hover, .btn-blue:active, .btn-blue:focus {
     border-color: rgba(82, 148, 226, 0.7);
-    color: rgba(82, 148, 226, 0.7) !important; }
+    color: rgba(82, 148, 226, 0.7); }
+
+.btn-green {
+  border-color: #2ecc40;
+  color: #646464; }
+  .btn-green:hover, .btn-green:active, .btn-green:focus {
+    border-color: rgba(46, 204, 64, 0.7);
+    color: rgba(46, 204, 64, 0.7); }
 
 .site-footer {
   margin-top: 4rem; }
@@ -1096,45 +1109,38 @@ img {
       background-color: rgba(82, 148, 226, 0.7);
       border-bottom: 0; } }
 
-#about .page-content a,
-#about .page-title a {
+#about .page-title a,
+#about .page-content a {
   color: #5294e2;
   text-decoration: underline; }
-  #about .page-content a:hover, #about .page-content a:focus,
-  #about .page-title a:hover,
-  #about .page-title a:focus {
+  #about .page-title a:hover, #about .page-title a:focus,
+  #about .page-content a:hover,
+  #about .page-content a:focus {
     color: rgba(82, 148, 226, 0.7); }
 
 #about .page-content {
   border-color: #5294e2; }
   #about .page-content aside {
     text-align: center; }
-    @media (max-width: 543px) {
-      #about .page-content aside small {
-        font-size: 70%; } }
-    @media (max-width: 767px) {
-      #about .page-content aside {
-        padding-bottom: 2rem; } }
-    @media (min-width: 544px) and (max-width: 1199px) {
-      #about .page-content aside small {
-        font-size: 55%; } }
-    @media (min-width: 1200px) and (max-width: 1549px) {
-      #about .page-content aside small {
-        font-size: 65%; } }
+    #about .page-content aside h2 {
+      font-size: 1.6rem; }
+      #about .page-content aside h2 small {
+        display: block;
+        line-height: 1.3; }
+        @media (min-width: 544px) and (max-width: 1199px) {
+          #about .page-content aside h2 small {
+            font-size: 55%; } }
+        @media (min-width: 1200px) and (max-width: 1549px) {
+          #about .page-content aside h2 small {
+            font-size: 65%; } }
     #about .page-content aside .tiagovatar {
       margin-bottom: 1rem; }
     #about .page-content aside h2 small {
       color: #c6c6c6; }
-  #about .page-content main h2:before, #about .page-content main h2:after {
-    color: #c6c6c6;
-    font-family: 'Nunito', sans-serif; }
-  #about .page-content main h2:before {
-    content: '\27'; }
-  #about .page-content main h2:after {
-    content: '\A0 \27'; }
   @media (max-width: 767px) {
     #about .page-content main {
       border-top: 2px solid #c6c6c6;
+      margin-top: 2rem;
       padding-top: 2rem; } }
 
 #portfolio ::-moz-selection {
@@ -1173,24 +1179,150 @@ img {
       background-color: rgba(46, 204, 64, 0.7);
       border-bottom: 0; } }
 
-#portfolio .page-content a,
 #portfolio .page-title a {
   color: #2ecc40;
   text-decoration: underline; }
-  #portfolio .page-content a:hover, #portfolio .page-content a:focus,
-  #portfolio .page-title a:hover,
-  #portfolio .page-title a:focus {
+  #portfolio .page-title a:hover, #portfolio .page-title a:focus {
     color: rgba(46, 204, 64, 0.7); }
 
 #portfolio .page-content {
+  border-color: #2ecc40;
+  list-style: none;
+  overflow: hidden;
+  padding: 0; }
+  #portfolio .page-content .project {
+    margin-bottom: 0; }
+    @media (max-width: 767px) {
+      #portfolio .page-content .project {
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; } }
+    @media (min-width: 768px) {
+      #portfolio .page-content .project {
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; } }
+    @media (min-width: 992px) {
+      #portfolio .page-content .project {
+        -ms-flex: 0 0 33.3333%;
+            flex: 0 0 33.3333%; } }
+    @media (min-width: 1550px) {
+      #portfolio .page-content .project {
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%; } }
+  #portfolio .page-content figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative; }
+    #portfolio .page-content figure:hover > figcaption {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
+    #portfolio .page-content figure figcaption {
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      background-color: rgba(51, 51, 51, 0.9);
+      bottom: 0;
+      color: #fff;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      left: 0;
+      padding: 2rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+      transition: -webkit-transform .3s;
+      transition: transform .3s; }
+      @media (max-width: 543px) {
+        #portfolio .page-content figure figcaption {
+          padding: 1rem; } }
+      #portfolio .page-content figure figcaption h2 {
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+        margin: 0; }
+        #portfolio .page-content figure figcaption h2 small {
+          color: #c6c6c6;
+          display: block; }
+      #portfolio .page-content figure figcaption p {
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+        margin: 0; }
+      #portfolio .page-content figure figcaption .btn {
+        color: #fff; }
+        #portfolio .page-content figure figcaption .btn:hover {
+          color: #c6c6c6; }
+      #portfolio .page-content figure figcaption .links {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        @media (max-width: 767px) {
+          #portfolio .page-content figure figcaption .links {
+            -ms-flex-pack: distribute;
+                justify-content: space-around; } }
+
+#case ::-moz-selection {
+  background: #2ecc40; }
+
+#case ::selection {
+  background: #2ecc40; }
+
+#case a::-moz-selection {
+  color: #fff; }
+
+#case a::selection {
+  color: #fff; }
+
+#case img::-moz-selection {
+  background: transparent; }
+
+#case img::selection {
+  background: transparent; }
+
+#case .site-header nav .nav-portfolio.active {
+  background-color: #2ecc40;
+  border-color: #333;
+  color: #fff;
+  z-index: 1; }
+  #case .site-header nav .nav-portfolio.active .description {
+    color: #93e79c; }
+    #case .site-header nav .nav-portfolio.active .description:before {
+      content: '02:active'; }
+
+@media (max-width: 767px) {
+  #case .site-header nav {
+    background-color: #2ecc40;
+    border-color: #17641f; }
+    #case .site-header nav .nav-portfolio.active {
+      background-color: rgba(46, 204, 64, 0.7);
+      border-bottom: 0; } }
+
+#case .page-title a,
+#case .page-content a {
+  color: #2ecc40;
+  text-decoration: underline; }
+  #case .page-title a:hover, #case .page-title a:focus,
+  #case .page-content a:hover,
+  #case .page-content a:focus {
+    color: rgba(46, 204, 64, 0.7); }
+
+#case .page-content {
   border-color: #2ecc40; }
-  #portfolio .page-content main h2:before, #portfolio .page-content main h2:after {
-    color: #c6c6c6;
-    font-family: 'Nunito', sans-serif; }
-  #portfolio .page-content main h2:before {
-    content: '\27'; }
-  #portfolio .page-content main h2:after {
-    content: '\A0 \27'; }
+  #case .page-content aside {
+    text-align: center; }
+  @media (max-width: 767px) {
+    #case .page-content main {
+      border-top: 2px solid #c6c6c6;
+      margin-top: 2rem;
+      padding-top: 2rem; } }
 
 #blog ::-moz-selection {
   background: #ffdc00; }

@@ -36,8 +36,8 @@
             background-color: transparentize($blue, .3)
             border-bottom: 0
 
-  .page-content,
-  .page-title
+  .page-title,
+  .page-content
     a
       color: $blue
       text-decoration: underline
@@ -52,20 +52,19 @@
     aside
       text-align: center
 
-      @media (max-width: 543px)
-        small
-          font-size: 70%
+      h2
+        font-size: 1.6rem
 
-      @media (max-width: 767px)
-        padding-bottom: 2rem
-
-      @media (min-width: 544px) and (max-width: 1199px)
         small
-          font-size: 55%
+          display: block
+          line-height: 1.3
 
-      @media (min-width: 1200px) and (max-width: 1549px)
-        small
-          font-size: 65%
+          @media (min-width: 544px) and (max-width: 1199px)
+            font-size: 55%
+
+          @media (min-width: 1200px) and (max-width: 1549px)
+              font-size: 65%
+
 
       .tiagovatar
         margin-bottom: 1rem
@@ -74,20 +73,8 @@
         small
           color: $silver
 
-
     main
-      h2
-        &:before,
-        &:after
-          color: $silver
-          font-family: 'Nunito', sans-serif
-
-        &:before
-          content: '\27'
-
-        &:after
-          content: '\A0 \27'
-
       @media (max-width: 767px)
         border-top: 2px solid $silver
+        margin-top: 2rem
         padding-top: 2rem

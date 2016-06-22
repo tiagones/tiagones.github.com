@@ -6,4 +6,21 @@
     li
       a(href="#0") Link 2
 
-.container.page-content
+ul.container.page-content
+  {% for projects in site.data.portfolio.projects %}
+  li.column.column-1of3.project
+    figure
+      img(src="{{ projects.thumbnail }}", alt="{{ projects.name }}", class="img-responsive")
+      figcaption
+        h2.
+          {{ projects.name }}
+          #[small {{ projects.field }}]
+        p {{ projects.services }}
+        ul.links
+          {% if projects.website != null %}
+          li #[a(href="{{ projects.website }}", target="_blank" class="btn btn-green") Visite o site]
+          {% endif  %}
+          {% if projects.case != null %}
+          li #[a(href="#0", class="btn btn-green") Veja o case]
+          {% endif  %}
+  {% endfor %}

@@ -36,7 +36,6 @@
             background-color: transparentize($green, .3)
             border-bottom: 0
 
-  .page-content,
   .page-title
     a
       color: $green
@@ -48,16 +47,80 @@
 
   .page-content
     border-color: $green
+    list-style: none
+    overflow: hidden
+    padding: 0
 
-    main
-      h2
-        &:before,
-        &:after
-          color: $silver
-          font-family: 'Nunito', sans-serif
 
-        &:before
-          content: '\27'
+    .project
+      margin-bottom: 0
 
-        &:after
-          content: '\A0 \27'
+      @media (max-width: 767px)
+        flex: 0 0 100%
+
+      @media (min-width: 768px)
+        flex: 0 0 50%
+
+      @media (min-width: 992px)
+        flex: 0 0 33.3333%
+
+      @media (min-width: 1550px)
+        flex: 0 0 25%
+
+
+    figure
+      margin: 0
+      overflow: hidden
+      position: relative
+
+      &:hover > figcaption
+        transform: translateY(0)
+
+      figcaption
+        align-content: space-between
+        align-items: center
+        background-color: transparentize($black, .1)
+        bottom: 0
+        color: $white
+        display: flex
+        flex-wrap: wrap
+        left: 0
+        padding: 2rem
+        position: absolute
+        right: 0
+        top: 0
+        transform: translateY(100%)
+        transition: transform .3s
+
+        @media (max-width: 543px)
+          padding: 1rem
+
+
+        h2
+          flex: 1 0 100%
+          margin: 0
+
+          small
+            color: $silver
+            display: block
+
+        p
+          flex: 1 0 100%
+          margin: 0
+
+        .btn
+          color: $white
+
+          &:hover
+            color: $silver
+
+        .links
+          display: flex
+          flex: 1 0 100%
+          justify-content: space-between
+          list-style: none
+          margin: 0
+          padding: 0
+
+          @media (max-width: 767px)
+            justify-content: space-around

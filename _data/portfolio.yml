@@ -1,0 +1,75 @@
+#-------------------------------
+# Portfolio Section
+projects:
+- {
+    name:         'DHCP Informática',
+    field:        'e-commerce',
+    services:     'Identidade visual, Direção de arte, Layout, Criação do tema para Magento, Organização dos dados, Manutenção da loja Virtual.',
+    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 1',
+    case:         true,
+    case-file:    '',
+    website:      'http://www.dhcp.com.br'
+  }
+- {
+    name:         'Projeto 2',
+    field:        'e-commerce',
+    services:     'Adaptação do tema para Magento',
+    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 2',
+    case:         ,
+    case-file:    '',
+    website:      'http://www.dhcp.com.br'
+  }
+- {
+    name:         'Projeto 3',
+    field:        'Blog',
+    services:     'Identidade visual, Direção de arte, Layout, Criação do tema para Magento, Organização dos dados, Manutenção da loja Virtual.',
+    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 3',
+    case:         ,
+    case-file:    '',
+    website:
+  }
+- {
+    name:         'Projeto 4',
+    field:        'Hotsite',
+    services:     'Identidade visual, Direção de arte, Layout, Criação do tema para Magento, Organização dos dados, Manutenção da loja Virtual.',
+    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 4',
+    case:         ,
+    case-file:    '',
+    website:
+  }
+- {
+    name:         'Projeto 5',
+    field:        'Categoria',
+    services:     'Identidade visual, Direção de arte, Layout, Criação do tema para Magento, Organização dos dados, Manutenção da loja Virtual.',
+    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 5',
+    case:         ,
+    case-file:    '',
+    website:
+  }
+- {
+    name:         'Projeto 6',
+    field:        'Categoria',
+    services:     'Identidade visual, Direção de arte, Layout, Criação do tema para Magento, Organização dos dados, Manutenção da loja Virtual.',
+    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 6',
+    case:         ,
+    case-file:    '',
+    website:
+  }
+- {
+    name:         'Projeto 7',
+    field:        'Categoria',
+    services:     'Identidade visual, Direção de arte, Layout, Criação do tema para Magento, Organização dos dados, Manutenção da loja Virtual.',
+    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 7',
+    case:         ,
+    case-file:    '',
+    website:
+  }
+- {
+    name:         'Projeto 8',
+    field:        'Categoria',
+    services:     'Identidade visual, Direção de arte, Layout, Criação do tema para Magento, Organização dos dados, Manutenção da loja Virtual.',
+    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 8',
+    case:         ,
+    case-file:    '',
+    website:
+  }
