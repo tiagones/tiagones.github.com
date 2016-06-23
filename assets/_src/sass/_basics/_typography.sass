@@ -14,30 +14,42 @@ h1
   font-size: 3.2rem
 
 h2
-  font-size: 2rem
+  font-size: 2.1rem
 
 h3
-  font-size: 1.6rem
+  font-size: 1.85rem
+
+h4
+  font-size: 1.55rem
+
+h5
+  font-size: 1.35rem
+
+h6
+  font-size: 1.1rem
 
 
 .page-title
   margin-bottom: 4rem
   text-align: center
 
-  &:before,
-  &:after
-    background-color: $silver
-    content: ''
-    display: block
-    height: 3px
-    left: calc(50% - 2rem)
-    position: absolute
-    width: 4rem
-    z-index: -1
-
   @media (max-width: 767px)
     margin-bottom: 2rem
 
+  @media (min-width: 768px)
+    &:before,
+    &:after
+      background-color: $silver
+      content: ''
+      display: block
+      height: 3px
+      left: calc(50% - 2rem)
+      position: relative
+      width: 4rem
+      z-index: -1
+
+    &:after
+      top: -3px
 
   h1
     margin-top: 0
@@ -48,6 +60,10 @@ h3
 
     &:after
       content: ' />'
+
+    @media (max-width: 767px)
+      padding-top: 0
+
 
   ul
     list-style: none
@@ -82,7 +98,10 @@ h3
   color:
   padding: 2rem
 
-  @media (max-width: 767px)
+  @media (max-width: 991px)
+    padding: 1.5rem
+
+  @media (max-width: 543px)
     padding: 1rem
     text-align: center
 
@@ -100,7 +119,8 @@ strong,
 b
   font-weight: 400
 
-ul
+ul,
+ol
   line-height: 1.2
   padding-left: 2rem
 
@@ -115,5 +135,5 @@ ul
 
 hr
   border: 0
-  border-top: 2px solid $silver
+  border-top: 2px solid $border
   margin: 2rem 0

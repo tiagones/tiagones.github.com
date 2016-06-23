@@ -1,5 +1,5 @@
 baseurl: /
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge # or rouge or null
 exclude: [
   "docs",

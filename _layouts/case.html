@@ -20,13 +20,27 @@
     <div class="page-title">
       <h1>{{ page.title }}</h1>
       <ul>
-          <li><a href="#0">link 1</a></li>
-          <li><a href="#0">Link 2</a></li>
+          <li><a href="{{ site.baseurl }}portfolio/">Voltar ao Portfólio</a></li>
       </ul>
     </div>
 
     <div class="container page-content">
-        <aside class="column column-gutter column-1of4"></aside>
+        <aside class="column column-gutter column-1of4">
+          <img src="{{ page.logo }}" alt="DHCP Informática" class="case-logo img-responsive" />
+
+          {% if page.services != null %}
+          <h2>Serviços prestados</h2>
+          <ul>
+            {% for service in page.services %}
+            <li>{{ service.service }}</li>
+            {% endfor %}
+          </ul>
+          {% endif  %}
+
+          {% if page.website != null %}
+          <a href="{{ page.website }}" target="_blank" class="btn btn-green">Visite o site</a>
+          {% endif  %}
+        </aside>
         <main class="column column-gutter">{{ content }}</main>
     </div>
 

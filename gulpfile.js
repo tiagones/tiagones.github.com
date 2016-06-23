@@ -129,11 +129,18 @@ gulp.task('imagemin', function () {
 gulp.task('watch', function () {
     gulp.watch('assets/_src/sass/**', ['sass']);
     gulp.watch([
+      '_config.yml',
       'index.html',
+      'sobre-este-site.html',
+      '_data/**',
       '_includes/*.html',
       '_layouts/*.html',
-      '_data/**',
-      '_posts/**'
+      '_posts/**',
+      'blog/index.html',
+      'case/**',
+      'contato/index.html',
+      'portfolio/index.html',
+      'sobre-min/index.html'
     ], ['jekyll-rebuild']);
     gulp.watch('_jadefiles/*.jade', ['jade']);
     gulp.watch('assets/_src/js/**', ['jshint', 'uglify']);

@@ -1,10 +1,5 @@
 .page-title
   h1 {{ page.title }}
-  ul
-    li
-      a(href="#0") link 1
-    li
-      a(href="#0") Link 2
 
 ul.container.page-content
   {% for projects in site.data.portfolio.projects %}
@@ -15,12 +10,13 @@ ul.container.page-content
         h2.
           {{ projects.name }}
           #[small {{ projects.field }}]
-        p {{ projects.services }}
+        p.
+          {{ projects.services }}
         ul.links
           {% if projects.website != null %}
           li #[a(href="{{ projects.website }}", target="_blank" class="btn btn-green") Visite o site]
           {% endif  %}
           {% if projects.case != null %}
-          li #[a(href="#0", class="btn btn-green") Veja o case]
+          li #[a(href="{{ site.baseurl }}case/{{ projects.case-link }}", class="btn btn-green") Veja o case]
           {% endif  %}
   {% endfor %}
