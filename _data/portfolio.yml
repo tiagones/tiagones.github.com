@@ -4,11 +4,10 @@ projects:
 - {
     name:         'DHCP Informática',
     field:        'e-commerce',
+    date:         '2015',
     services:     'Identidade visual,
                     Direção de arte,
-                    Layout,
                     Criação do tema para Magento,
-                    Organização dos dados
                     e Manutenção da loja Virtual.',
     thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 1',
     case:         true,
@@ -18,6 +17,7 @@ projects:
 - {
     name:         'Projeto 2',
     field:        'e-commerce',
+    date:         '2016',
     services:     'Adaptação do tema para Magento.',
     thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 2',
     case:         true,
@@ -27,6 +27,7 @@ projects:
 - {
     name:         'Projeto 3',
     field:        'Blog',
+    date:         ,
     services:     'Identidade visual
                     e Direção de arte.',
     thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 3',
@@ -37,6 +38,7 @@ projects:
 - {
     name:         'Projeto 4',
     field:        'Hotsite',
+    date:         ,
     services:     'Serviços prestados.',
     thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 4',
     case:         ,
@@ -46,6 +48,7 @@ projects:
 - {
     name:         'Projeto 5',
     field:        'Categoria',
+    date:         ,
     services:     'Serviços prestados.',
     thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 5',
     case:         ,
@@ -55,6 +58,7 @@ projects:
 - {
     name:         'Projeto 6',
     field:        'Categoria',
+    date:         ,
     services:     'Serviços prestados.',
     thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 6',
     case:         ,
@@ -64,6 +68,7 @@ projects:
 - {
     name:         'Projeto 7',
     field:        'Categoria',
+    date:         ,
     services:     'Serviços prestados.',
     thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 7',
     case:         ,
@@ -73,6 +78,7 @@ projects:
 - {
     name:         'Projeto 8',
     field:        'Categoria',
+    date:         ,
     services:     'Serviços prestados.',
     thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 8',
     case:         ,

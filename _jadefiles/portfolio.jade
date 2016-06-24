@@ -10,6 +10,9 @@ ul.container.page-content
         h2.
           {{ projects.name }}
           #[small {{ projects.field }}]
+        {% if projects.date != null %}
+        time {{ projects.date }}
+        {% endif  %}
         p.
           {{ projects.services }}
         ul.links

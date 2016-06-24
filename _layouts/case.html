@@ -24,10 +24,12 @@
       </ul>
     </div>
 
-    <div class="container page-content">
+    <section class="container page-content">
         <aside class="column column-gutter column-1of4">
-          <img src="{{ page.logo }}" alt="DHCP Informática" class="case-logo img-responsive" />
-
+          <img src="{{ page.logo }}" alt="{{ page.title }}" title="{{ page.title }}" class="case-logo img-responsive" />
+          <time>
+            {{ page.date }}
+          </time>
           {% if page.services != null %}
           <h2>Serviços prestados</h2>
           <ul>
@@ -42,7 +44,7 @@
           {% endif  %}
         </aside>
         <main class="column column-gutter">{{ content }}</main>
-    </div>
+    </section>
 
     {% include _footer.html %}
     {% include _body_before_close.html %}

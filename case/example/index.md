@@ -1,6 +1,7 @@
 ---
 layout:   case
 title:    Example
+date:     2015
 logo:     http://placeholder.pics/svg/378x150/DEDEDE/333333-c6c6c6/Logo Example
 services: [service: 'Adaptação do tema para Magento']
 website:  http://www.example.com

@@ -891,9 +891,9 @@ input[type='button'] {
   display: inline-block;
   font-size: 1rem;
   height: 2rem;
-  letter-spacing: .1rem;
+  letter-spacing: .08rem;
   line-height: 1.85rem;
-  padding: 0 1.3rem;
+  padding: 0 1.1rem;
   text-align: center;
   text-decoration: none !important;
   text-transform: uppercase;
@@ -921,7 +921,8 @@ input[type='button'] {
   border-radius: 1.75rem;
   font-size: 1.5rem;
   height: 3.5rem;
-  line-height: 3.35rem; }
+  line-height: 3.35rem;
+  padding: 0 1.3rem; }
 
 .btn-block {
   width: 100%; }
@@ -1270,6 +1271,9 @@ img {
         #portfolio .page-content figure figcaption h2 small {
           color: #c6c6c6;
           display: block; }
+      @media (max-width: 543px) {
+        #portfolio .page-content figure figcaption time {
+          margin: 0 auto; } }
       #portfolio .page-content figure figcaption p {
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
@@ -1340,15 +1344,19 @@ img {
 
 #case .page-content {
   border-color: #2ecc40; }
-  #case .page-content aside {
-    text-align: center; }
-    #case .page-content aside .case-logo {
-      margin-bottom: 1rem; }
-    #case .page-content aside h2 {
-      font-size: 1.5rem; }
-    #case .page-content aside ul {
-      color: #c6c6c6;
-      text-align: left; }
+  @media (max-width: 767px) {
+    #case .page-content {
+      text-align: center; } }
+  #case .page-content aside .case-logo {
+    margin-bottom: 1.2rem; }
+  #case .page-content aside time {
+    display: block;
+    margin-bottom: 1rem; }
+  #case .page-content aside h2 {
+    font-size: 1.5rem; }
+  #case .page-content aside ul {
+    color: #c6c6c6;
+    text-align: left; }
   @media (max-width: 767px) {
     #case .page-content main {
       border-top: 2px solid #ececec;
