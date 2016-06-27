@@ -9,7 +9,7 @@ website:  http://www.example.com
 
 ## Mou
 
-![Alt da imagem](http://www.dhcp.com.br/dhcp.png)
+![Alt da imagem](http://www.dhcp.com.br/dhcp.png){: #myid .my-class}
 
 ## Overview
 
