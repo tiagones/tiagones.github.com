@@ -1,1 +1,9 @@
-<div class="container"><main class="column column-gutter column-1of2"><h1>Olá Eu sou o Tiagones e nós deveríamos trabalhar juntos!</h1><p><strong>EU GOSTO DE CRIAR 'INTERNETZ'</strong>. Caso precise criar um site, transformar um layout em código, fazer a identidade visual da sua empresa ou precise de uma consultoria em e-commerce...</p><a href="#0" class="btn btn-cta btn-black">Me contrate</a></main></div>
+<div class="container"><main class="column column-gutter column-1of2"><h1>Olá Eu sou o Tiagones e nós deveríamos trabalhar juntos!</h1><p><strong>EU GOSTO DE CRIAR 'INTERNETZ'</strong>. Caso precise criar um site, transformar um layout em código, fazer a identidade visual da sua empresa ou precise de uma consultoria em e-commerce...</p><a href="#0" class="btn btn-cta btn-black">Me contrate</a></main></div><div class="container last-content"><div class="column column-1of2"><div class="container"><section class="column column-gutter column-1of2 last-project"><h2>Último Projeto
+<small><a href="{{site.baseurl}}portfolio">ver todos</a></small></h2>{% for projects in site.data.portfolio.projects %}
+{% if forloop.last == true %}
+{% if projects.case != null %}<a href="{{ site.baseurl }}case/{{ projects.case-link }}" class="content"><h3>{{ projects.name }}
+<small>{{ projects.field }}</small></h3><img src="{{site.baseurl}}assets/img/portfolio/{{ projects.thumbnail }}" alt="{{ projects.name }}" class="img-responsive"/></a>{% else %}<a href="{{ site.baseurl }}portfolio" class="content"><h3>{{ projects.name }}
+<small>{{ projects.field }}</small></h3><img src="{{site.baseurl}}assets/img/portfolio/{{ projects.thumbnail }}" alt="{{ projects.name }}" class="img-responsive"/></a>{% endif %}
+{% endif %}
+{% endfor %}</section><section class="column column-gutter column-1of2 last-post"><h2>Último Post
+<small><a href="{{site.baseurl}}blog">ver todos</a></small></h2><a href="0#" class="content"><h3>Titulo</h3><p>Lorem ipsum dolor sit amet.</p></a></section></div></div></div>

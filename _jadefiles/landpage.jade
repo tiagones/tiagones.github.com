@@ -4,3 +4,37 @@
     p.
       #[strong #{"Eu gosto de criar 'Internetz'".toUpperCase()}]. Caso precise criar um site, transformar um layout em código, fazer a identidade visual da sua empresa ou precise de uma consultoria em e-commerce...
     a(href="#0" class="btn btn-cta btn-black") Me contrate
+
+.container.last-content
+  div.column.column-1of2
+    .container
+      section.column.column-gutter.column-1of2.last-project
+        h2.
+          Último Projeto
+          #[small #[a(href="{{site.baseurl}}portfolio") ver todos]]
+        {% for projects in site.data.portfolio.projects %}
+        {% if forloop.last == true %}
+        {% if projects.case != null %}
+        a(href="{{ site.baseurl }}case/{{ projects.case-link }}" class="content")
+          h3.
+            {{ projects.name }}
+            #[small {{ projects.field }}]
+          img(src="{{site.baseurl}}assets/img/portfolio/{{ projects.thumbnail }}", alt="{{ projects.name }}", class="img-responsive")
+        {% else %}
+        a(href="{{ site.baseurl }}portfolio" class="content")
+          h3.
+            {{ projects.name }}
+            #[small {{ projects.field }}]
+          img(src="{{site.baseurl}}assets/img/portfolio/{{ projects.thumbnail }}", alt="{{ projects.name }}", class="img-responsive")
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+      section.column.column-gutter.column-1of2.last-post
+        h2.
+          Último Post
+          #[small #[a(href="{{site.baseurl}}blog") ver todos]]
+        a(href="0#" class="content")
+          h3 Titulo
+          p.
+            Lorem ipsum dolor sit amet.

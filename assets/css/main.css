@@ -397,7 +397,7 @@ body {
   font-size: 100%; }
 
 body {
-  background-color: #ececec;
+  background-color: #eee;
   color: #333;
   font-family: 'Nunito', sans-serif;
   font-size: 1.1rem;
@@ -453,13 +453,13 @@ h2 {
   font-size: 2.1rem; }
 
 h3 {
-  font-size: 1.85rem; }
+  font-size: 1.8rem; }
 
 h4 {
-  font-size: 1.55rem; }
+  font-size: 1.5rem; }
 
 h5 {
-  font-size: 1.35rem; }
+  font-size: 1.3rem; }
 
 h6 {
   font-size: 1.1rem; }
@@ -566,6 +566,8 @@ hr {
  * Container: Have fixed width for many screens and centered content
  */
 .container {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
   margin: 0 auto; }
   @media (max-width: 543px) {
     .container {
@@ -1104,6 +1106,39 @@ img {
   @media (max-width: 767px) {
     #landpage main .btn {
       background-color: rgba(255, 255, 255, 0.5); } }
+  @media (max-width: 767px) {
+    #landpage .last-content {
+      display: none; } }
+  #landpage h2 {
+    border-bottom: 2px solid #c6c6c6;
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+    padding-bottom: .2rem;
+    position: relative; }
+    #landpage h2 small {
+      bottom: .4rem;
+      font-size: 1rem;
+      margin-left: auto;
+      position: absolute;
+      right: 0; }
+      #landpage h2 small a {
+        color: #646464; }
+        #landpage h2 small a:after {
+          content: ' >'; }
+  #landpage .last-project a:hover {
+    color: #2ecc40; }
+  #landpage .last-post a:hover {
+    color: #ffdc00; }
+  #landpage .content {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: block; }
+    #landpage .content h3 {
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 1rem; }
+      #landpage .content h3 small {
+        color: #c6c6c6;
+        display: block; }
   #landpage .site-footer {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -1261,6 +1296,7 @@ img {
       background-color: rgba(51, 51, 51, 0.9);
       bottom: 0;
       color: #fff;
+      cursor: help;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;

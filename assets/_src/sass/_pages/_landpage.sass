@@ -61,6 +61,54 @@
         background-color: transparentize($white, .5)
 
 
+  .last-content
+    @media (max-width: 767px)
+      display: none
+
+
+  h2
+    border-bottom: 2px solid $silver
+    font-size: 1.8rem
+    margin-bottom: .5rem
+    padding-bottom: .2rem
+    position: relative
+
+    small
+      bottom: .4rem
+      font-size: 1rem
+      margin-left: auto
+      position: absolute
+      right: 0
+
+      a
+        color: $gray
+
+        &:after
+          content: ' >'
+
+  .last-project
+    a
+      &:hover
+        color: $green
+
+  .last-post
+    a
+      &:hover
+        color: $yellow
+
+  .content
+    background-color: $white-transparent
+    display: block
+
+    h3
+      font-size: 1.5rem
+      margin: 0
+      padding: 1rem
+
+      small
+        color: $silver
+        display: block
+
   .site-footer
     align-self: flex-end
     flex-basis: 100%
