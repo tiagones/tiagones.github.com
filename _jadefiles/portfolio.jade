@@ -5,7 +5,7 @@ ul.container.page-content
   {% for projects in site.data.portfolio.projects %}
   li.column.column-1of3.project
     figure
-      img(src="{{ projects.thumbnail }}", alt="{{ projects.name }}", class="img-responsive")
+      img(src="{{site.baseurl}}assets/img/portfolio/{{ projects.thumbnail }}", alt="{{ projects.name }}", class="img-responsive")
       figcaption
         h2.
           {{ projects.name }}

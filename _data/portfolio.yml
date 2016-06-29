@@ -9,79 +9,28 @@ projects:
                     Direção de arte,
                     Criação do tema para Magento,
                     e Manutenção da loja Virtual.',
-    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 1',
+    thumbnail:    'thumb-dhcp-informatica-site.jpg',
     case:         true,
     case-link:    'dhcp-informatica',
     website:      'http://www.dhcp.com.br'
   }
 - {
-    name:         'Projeto 2',
+    name:         'Virtual Insanity',
+    field:        'World of Warcraft Guild',
+    date:         '2015',
+    services:     'Criação do logotipo.',
+    thumbnail:    'thumb-virtual-insanity.jpg',
+    case:         ,
+    case-link:    ,
+    website:      'http://www.virtualinsanity.com.br/'
+  }
+- {
+    name:         'Figurini',
     field:        'e-commerce',
     date:         '2016',
     services:     'Adaptação do tema para Magento.',
-    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 2',
+    thumbnail:    'thumb-dhcp-informatica-logo.jpg',
     case:         true,
     case-link:    'example',
-    website:
-  }
-- {
-    name:         'Projeto 3',
-    field:        'Blog',
-    date:         ,
-    services:     'Identidade visual
-                    e Direção de arte.',
-    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 3',
-    case:         ,
-    case-link:    ,
-    website:
-  }
-- {
-    name:         'Projeto 4',
-    field:        'Hotsite',
-    date:         ,
-    services:     'Serviços prestados.',
-    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 4',
-    case:         ,
-    case-link:    ,
-    website:
-  }
-- {
-    name:         'Projeto 5',
-    field:        'Categoria',
-    date:         ,
-    services:     'Serviços prestados.',
-    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 5',
-    case:         ,
-    case-link:    ,
-    website:
-  }
-- {
-    name:         'Projeto 6',
-    field:        'Categoria',
-    date:         ,
-    services:     'Serviços prestados.',
-    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 6',
-    case:         ,
-    case-link:    ,
-    website:
-  }
-- {
-    name:         'Projeto 7',
-    field:        'Categoria',
-    date:         ,
-    services:     'Serviços prestados.',
-    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 7',
-    case:         ,
-    case-link:    ,
-    website:
-  }
-- {
-    name:         'Projeto 8',
-    field:        'Categoria',
-    date:         ,
-    services:     'Serviços prestados.',
-    thumbnail:    'http://placeholder.pics/svg/544x408/DEDEDE/333333-c6c6c6/Projeto 8',
-    case:         ,
-    case-link:    ,
-    website:
+    website:      'http://www.figurini.com.br/'
   }
