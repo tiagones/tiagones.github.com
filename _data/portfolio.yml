@@ -3,12 +3,53 @@
 projects:
 - {
     name:         'DHCP Informática',
+    field:        'Loja de informática',
+    date:         'Desde 2008',
+    services:     'Identidade visual,
+                    e Direção de arte.',
+    thumbnail:    'thumb-dhcp-informatica-logo.jpg',
+    case:         true,
+    case-link:    'dhcp-informatica',
+    website:      'http://www.dhcp.com.br'
+  }
+- {
+    name:         'Imedicina',
+    field:        'Aplicativo de Saúde',
+    date:         '2013',
+    services:     'Implementação do layout
+                    e Criação do tema personalizado para Wordpress.',
+    thumbnail:    'thumb-imedicina-hotsite.jpg',
+    case:         ,
+    case-link:    ,
+    website:      'http://imedicina.com.br/'
+  }
+- {
+    name:         'Imedicina',
+    field:        'Aplicativo de Saúde',
+    date:         '2013',
+    services:     'Implementação do layout para Front-end.',
+    thumbnail:    'thumb-imedicina-hotsite.jpg',
+    case:         ,
+    case-link:    ,
+    website:      'http://imedicina.com.br/'
+  }
+- {
+    name:         'Corpografias em Dança',
+    field:        'Site sobre Pesquisa',
+    date:         '2013',
+    services:     'Implementação do layout
+                    e Criação do tema personalizado para Wordpress.',
+    thumbnail:    'thumb-corpografias.jpg',
+    case:         ,
+    case-link:    ,
+    website:      'http://www.corpografias.com/'
+  }
+- {
+    name:         'DHCP Informática',
     field:        'e-commerce',
     date:         '2015',
-    services:     'Identidade visual,
-                    Direção de arte,
-                    Criação do tema para Magento,
-                    e Manutenção da loja Virtual.',
+    services:     'Criação do tema para Magento,
+                    e Administração da loja Virtual.',
     thumbnail:    'thumb-dhcp-informatica-site.jpg',
     case:         true,
     case-link:    'dhcp-informatica',
@@ -25,11 +66,22 @@ projects:
     website:      'http://www.virtualinsanity.com.br/'
   }
 - {
+    name:         'CMU',
+    field:        'Comercializadora de Energia',
+    date:         '2015',
+    services:     'Implementação do Hotsite
+                    e Criação do email para Newsletter.',
+    thumbnail:    'thumb-cmu.jpg',
+    case:         ,
+    case-link:    ,
+    website:      ''
+  }
+- {
     name:         'Figurini',
     field:        'e-commerce',
     date:         '2016',
     services:     'Adaptação do tema para Magento.',
-    thumbnail:    'thumb-dhcp-informatica-logo.jpg',
+    thumbnail:    'thumb-figurini.jpg',
     case:         true,
     case-link:    'example',
     website:      'http://www.figurini.com.br/'
