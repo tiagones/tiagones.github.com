@@ -1,6 +1,9 @@
 baseurl: /
 markdown: kramdown
 highlighter: rouge # or rouge or null
+url: http://tiagones.com.br/
+paginate: 2
+paginate_path: "/blog/page:num/"
 exclude: [
   "docs",
   "node_modules",
