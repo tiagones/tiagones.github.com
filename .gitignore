@@ -26,6 +26,7 @@ ehthumbs.db
 *.swp
 
 # Jekyll Specific
+_posts/2012*.*
 _site
 .idea
 
