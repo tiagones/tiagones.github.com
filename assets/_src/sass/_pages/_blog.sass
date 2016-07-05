@@ -49,15 +49,20 @@
   .page-content
     border-color: $yellow
 
+    aside
+      ul
+        li
+          color: $gray
+
+          a
+            color: $silver
+            text-decoration: none
+
     main
-      h2
-        &:before,
-        &:after
-          color: $silver
-          font-family: 'Nunito', sans-serif
+      @media (max-width: 767px)
+        border-top: 2px solid $border
+        margin-top: 2rem
+        padding-top: 2rem
 
-        &:before
-          content: '\27'
-
-        &:after
-          content: '\A0 \27'
+      .pagination
+        text-align: center

@@ -948,17 +948,31 @@ input[type='button'] {
 
 .btn-blue {
   border-color: #5294e2;
-  color: #646464; }
+  color: #646464 !important; }
   .btn-blue:hover, .btn-blue:active, .btn-blue:focus {
     border-color: rgba(82, 148, 226, 0.7);
-    color: rgba(82, 148, 226, 0.7); }
+    color: rgba(82, 148, 226, 0.7) !important; }
 
 .btn-green {
   border-color: #2ecc40;
-  color: #646464; }
+  color: #646464 !important; }
   .btn-green:hover, .btn-green:active, .btn-green:focus {
     border-color: rgba(46, 204, 64, 0.7);
-    color: rgba(46, 204, 64, 0.7); }
+    color: rgba(46, 204, 64, 0.7) !important; }
+
+.btn-yellow {
+  border-color: #ffdc00;
+  color: #646464 !important; }
+  .btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus {
+    border-color: rgba(255, 220, 0, 0.7);
+    color: rgba(255, 220, 0, 0.7) !important; }
+
+.btn-red {
+  border-color: #f46067;
+  color: #646464 !important; }
+  .btn-red:hover, .btn-red:active, .btn-red:focus {
+    border-color: rgba(244, 96, 103, 0.7);
+    color: rgba(244, 96, 103, 0.7) !important; }
 
 .site-footer {
   margin-top: 4rem; }
@@ -1328,9 +1342,9 @@ img {
             flex: 1 0 100%;
         margin: 0; }
       #portfolio .page-content figure figcaption .btn {
-        color: #fff; }
+        color: #fff !important; }
         #portfolio .page-content figure figcaption .btn:hover {
-          color: #c6c6c6; }
+          color: #c6c6c6 !important; }
       #portfolio .page-content figure figcaption .links {
         display: -ms-flexbox;
         display: flex;
@@ -1459,13 +1473,18 @@ img {
 
 #blog .page-content {
   border-color: #ffdc00; }
-  #blog .page-content main h2:before, #blog .page-content main h2:after {
-    color: #c6c6c6;
-    font-family: 'Nunito', sans-serif; }
-  #blog .page-content main h2:before {
-    content: '\27'; }
-  #blog .page-content main h2:after {
-    content: '\A0 \27'; }
+  #blog .page-content aside ul li {
+    color: #646464; }
+    #blog .page-content aside ul li a {
+      color: #c6c6c6;
+      text-decoration: none; }
+  @media (max-width: 767px) {
+    #blog .page-content main {
+      border-top: 2px solid #ececec;
+      margin-top: 2rem;
+      padding-top: 2rem; } }
+  #blog .page-content main .pagination {
+    text-align: center; }
 
 #contact ::-moz-selection {
   background: #f46067; }

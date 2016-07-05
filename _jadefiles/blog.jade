@@ -1,9 +1,34 @@
 .page-title
   h1 {{ page.title }}
-  ul
-    li
-      a(href="#0") link 1
-    li
-      a(href="#0") Link 2
 
 .container.page-content
+  aside.column.column-gutter.column-1of4
+    h2 Assuntos
+    ul
+      {% for category in site.categories %}
+      li
+        a(href="/tags/#{{ category | first }}") {{ category | first }}
+      {% endfor %}
+  
+  main.column.column-gutter
+    {% for post in site.posts %}
+    h2 {{ post.title }}
+    time {{ post.date | date: "%d/%m/%Y" }}
+    p {{ post.excerpt }}
+    #[a(href="{{ post.url }}" class="btn btn-yellow") Leia o Post]
+    hr
+    {% endfor %}
+
+    // Pagination links
+    div.pagination
+      {% if paginator.previous_page %}
+      a(href="{{ paginator.previous_page_path }}" class="previous") Anterior
+      {% else %}
+      #[span(class="previous") Anterior]
+      {% endif %}
+      #[span(class="page_number ") Page: {{ paginator.page }} of {{ paginator.total_pages }}]
+      {% if paginator.next_page %}
+      a(href="{{ paginator.next_page_path }}}" class="next") Próximo
+      {% else %}
+      #[span(class="next") Próximo]
+      {% endif %}
